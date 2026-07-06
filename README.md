@@ -170,6 +170,30 @@ We run controlled degradation tests to verify our metrics aren't just numbers:
 
 These are implemented as automated tests in `tests/test_evaluation.py`.
 
+## Pre-Computed Sample Results
+
+Because the Google Gemini free tier has a rate limit of 15 requests/minute, running the full live demo end-to-end may hit quota limits depending on recent API usage. To demonstrate the evaluation output **without needing any API calls**, this repo ships with:
+
+- **`sample_results.json`** — pre-computed evaluation results from 3 real test emails that were generated during live demo runs (actual model outputs, not fabricated).
+- **`scripts/show_scores.py`** — a display script that reads the JSON and pretty-prints the full per-response and overall scoring report.
+
+### View the scores instantly (no API key needed)
+
+```bash
+python -X utf8 scripts/show_scores.py
+```
+
+This prints:
+
+- **Overall system scores**: Composite (0.7821/1.00), ROUGE-L, BERTScore, Sentence Similarity, Key Action Coverage, LLM Judge average
+- **Per-response detail** for each email:
+  - 4 automated metrics with their weights
+  - LLM-as-a-Judge scores (1–5) across 5 quality dimensions with written justifications
+  - Which past emails were retrieved as context
+  - Final composite score
+
+The `-X utf8` flag is needed on Windows to render the table characters correctly.
+
 ## How to Run
 
 ### Generate a reply for a single email
