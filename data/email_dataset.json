@@ -1,0 +1,2502 @@
+[
+  {
+    "id": "email_001",
+    "category": "meeting_scheduling",
+    "scenario": "schedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Thomas Clark <thomas.clark@luminarai.com>",
+      "to": "Sarah Taylor <sarah.taylor@stellarplatforms.com>",
+      "subject": "Someone requesting to schedule a new meeting",
+      "body": "Dear Sarah Taylor,\n\nA colleague or external contact wants to set up a meeting to discuss a topic.\n\nPlease advise on the next steps.\n\nBest regards,\nThomas Clark"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone requesting to schedule a new meeting",
+      "body": "Dear Thomas Clark,\n\nThank you for reaching out. I have noted your request regarding someone requesting to schedule a new meeting and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Taylor"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "schedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_002",
+    "category": "meeting_scheduling",
+    "scenario": "schedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Clark <rachel.clark@quantisresearch.com>",
+      "to": "Lisa Thompson <lisa.thompson@apexdynamics.com>",
+      "subject": "Someone requesting to schedule a new meeting",
+      "body": "Dear Lisa Thompson,\n\nA colleague or external contact wants to set up a meeting to discuss a topic.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Clark"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone requesting to schedule a new meeting",
+      "body": "Dear Rachel Clark,\n\nThank you for reaching out. I have noted your request regarding someone requesting to schedule a new meeting and will follow up shortly with the relevant details.\n\nBest regards,\nLisa Thompson"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "schedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_003",
+    "category": "meeting_scheduling",
+    "scenario": "schedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Maria Garcia <maria.garcia@horizonx.com>",
+      "to": "Andre Santos <andre.santos@nexgensoftware.com>",
+      "subject": "Someone requesting to schedule a new meeting",
+      "body": "Dear Andre Santos,\n\nA colleague or external contact wants to set up a meeting to discuss a topic.\n\nPlease advise on the next steps.\n\nBest regards,\nMaria Garcia"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone requesting to schedule a new meeting",
+      "body": "Dear Maria Garcia,\n\nThank you for reaching out. I have noted your request regarding someone requesting to schedule a new meeting and will follow up shortly with the relevant details.\n\nBest regards,\nAndre Santos"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "schedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_004",
+    "category": "meeting_scheduling",
+    "scenario": "schedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Thomas Garcia <thomas.garcia@dataforgeinc.com>",
+      "to": "Rachel Williams <rachel.williams@brightwavesolutions.com>",
+      "subject": "Someone requesting to schedule a new meeting",
+      "body": "Dear Rachel Williams,\n\nA colleague or external contact wants to set up a meeting to discuss a topic.\n\nPlease advise on the next steps.\n\nBest regards,\nThomas Garcia"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone requesting to schedule a new meeting",
+      "body": "Dear Thomas Garcia,\n\nThank you for reaching out. I have noted your request regarding someone requesting to schedule a new meeting and will follow up shortly with the relevant details.\n\nBest regards,\nRachel Williams"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "schedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_005",
+    "category": "meeting_scheduling",
+    "scenario": "schedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Robert Brown <robert.brown@truenorthventures.com>",
+      "to": "Robert Mueller <robert.mueller@upliftmedia.com>",
+      "subject": "Someone requesting to schedule a new meeting",
+      "body": "Dear Robert Mueller,\n\nA colleague or external contact wants to set up a meeting to discuss a topic.\n\nPlease advise on the next steps.\n\nBest regards,\nRobert Brown"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone requesting to schedule a new meeting",
+      "body": "Dear Robert Brown,\n\nThank you for reaching out. I have noted your request regarding someone requesting to schedule a new meeting and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Mueller"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "schedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_006",
+    "category": "meeting_scheduling",
+    "scenario": "reschedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Fatima Taylor <fatima.taylor@luminarai.com>",
+      "to": "Fatima Martinez <fatima.martinez@cascadiatech.com>",
+      "subject": "Someone asking to reschedule an existing meeting",
+      "body": "Dear Fatima Martinez,\n\nA previously confirmed meeting needs to be moved due to a conflict.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Taylor"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone asking to reschedule an existing meeting",
+      "body": "Dear Fatima Taylor,\n\nThank you for reaching out. I have noted your request regarding someone asking to reschedule an existing meeting and will follow up shortly with the relevant details.\n\nBest regards,\nFatima Martinez"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "reschedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_007",
+    "category": "meeting_scheduling",
+    "scenario": "reschedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Thompson <rachel.thompson@orbitlabs.com>",
+      "to": "Lisa Nakamura <lisa.nakamura@keystonepartners.com>",
+      "subject": "Someone asking to reschedule an existing meeting",
+      "body": "Dear Lisa Nakamura,\n\nA previously confirmed meeting needs to be moved due to a conflict.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Thompson"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone asking to reschedule an existing meeting",
+      "body": "Dear Rachel Thompson,\n\nThank you for reaching out. I have noted your request regarding someone asking to reschedule an existing meeting and will follow up shortly with the relevant details.\n\nBest regards,\nLisa Nakamura"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "reschedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_008",
+    "category": "meeting_scheduling",
+    "scenario": "reschedule_request",
+    "split": "test",
+    "incoming_email": {
+      "from": "Andre Garcia <andre.garcia@luminarai.com>",
+      "to": "Ahmed Williams <ahmed.williams@brightwavesolutions.com>",
+      "subject": "Someone asking to reschedule an existing meeting",
+      "body": "Dear Ahmed Williams,\n\nA previously confirmed meeting needs to be moved due to a conflict.\n\nPlease advise on the next steps.\n\nBest regards,\nAndre Garcia"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone asking to reschedule an existing meeting",
+      "body": "Dear Andre Garcia,\n\nThank you for reaching out. I have noted your request regarding someone asking to reschedule an existing meeting and will follow up shortly with the relevant details.\n\nBest regards,\nAhmed Williams"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "reschedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_009",
+    "category": "meeting_scheduling",
+    "scenario": "reschedule_request",
+    "split": "test",
+    "incoming_email": {
+      "from": "Michael Ali <michael.ali@evergreensystems.com>",
+      "to": "Jennifer Ali <jennifer.ali@upliftmedia.com>",
+      "subject": "Someone asking to reschedule an existing meeting",
+      "body": "Dear Jennifer Ali,\n\nA previously confirmed meeting needs to be moved due to a conflict.\n\nPlease advise on the next steps.\n\nBest regards,\nMichael Ali"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone asking to reschedule an existing meeting",
+      "body": "Dear Michael Ali,\n\nThank you for reaching out. I have noted your request regarding someone asking to reschedule an existing meeting and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Ali"
+    },
+    "metadata": {
+      "tone": "apologetic",
+      "intent": "reschedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_010",
+    "category": "meeting_scheduling",
+    "scenario": "reschedule_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Kim <rachel.kim@luminarai.com>",
+      "to": "Olivia Singh <olivia.singh@upliftmedia.com>",
+      "subject": "Someone asking to reschedule an existing meeting",
+      "body": "Dear Olivia Singh,\n\nA previously confirmed meeting needs to be moved due to a conflict.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Kim"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone asking to reschedule an existing meeting",
+      "body": "Dear Rachel Kim,\n\nThank you for reaching out. I have noted your request regarding someone asking to reschedule an existing meeting and will follow up shortly with the relevant details.\n\nBest regards,\nOlivia Singh"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "reschedule request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_011",
+    "category": "meeting_scheduling",
+    "scenario": "cancel_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "Jennifer Nakamura <jennifer.nakamura@quantisresearch.com>",
+      "to": "Jennifer Kim <jennifer.kim@nexgensoftware.com>",
+      "subject": "Someone canceling a scheduled meeting",
+      "body": "Dear Jennifer Kim,\n\nA meeting is no longer needed or cannot happen as planned.\n\nPlease advise on the next steps.\n\nBest regards,\nJennifer Nakamura"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone canceling a scheduled meeting",
+      "body": "Dear Jennifer Nakamura,\n\nThank you for reaching out. I have noted your request regarding someone canceling a scheduled meeting and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Kim"
+    },
+    "metadata": {
+      "tone": "direct",
+      "intent": "cancel meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_012",
+    "category": "meeting_scheduling",
+    "scenario": "cancel_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "Robert Lee <robert.lee@nexgensoftware.com>",
+      "to": "Kenji Chen <kenji.chen@apexdynamics.com>",
+      "subject": "Someone canceling a scheduled meeting",
+      "body": "Dear Kenji Chen,\n\nA meeting is no longer needed or cannot happen as planned.\n\nPlease advise on the next steps.\n\nBest regards,\nRobert Lee"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone canceling a scheduled meeting",
+      "body": "Dear Robert Lee,\n\nThank you for reaching out. I have noted your request regarding someone canceling a scheduled meeting and will follow up shortly with the relevant details.\n\nBest regards,\nKenji Chen"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "cancel meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_013",
+    "category": "meeting_scheduling",
+    "scenario": "cancel_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "Fatima Santos <fatima.santos@keystonepartners.com>",
+      "to": "Michael Mueller <michael.mueller@pinnacleconsulting.com>",
+      "subject": "Someone canceling a scheduled meeting",
+      "body": "Dear Michael Mueller,\n\nA meeting is no longer needed or cannot happen as planned.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Santos"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone canceling a scheduled meeting",
+      "body": "Dear Fatima Santos,\n\nThank you for reaching out. I have noted your request regarding someone canceling a scheduled meeting and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Mueller"
+    },
+    "metadata": {
+      "tone": "apologetic",
+      "intent": "cancel meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_014",
+    "category": "meeting_scheduling",
+    "scenario": "cancel_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "David Martinez <david.martinez@luminarai.com>",
+      "to": "Maria Anderson <maria.anderson@globalsynccorp.com>",
+      "subject": "Someone canceling a scheduled meeting",
+      "body": "Dear Maria Anderson,\n\nA meeting is no longer needed or cannot happen as planned.\n\nPlease advise on the next steps.\n\nBest regards,\nDavid Martinez"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone canceling a scheduled meeting",
+      "body": "Dear David Martinez,\n\nThank you for reaching out. I have noted your request regarding someone canceling a scheduled meeting and will follow up shortly with the relevant details.\n\nBest regards,\nMaria Anderson"
+    },
+    "metadata": {
+      "tone": "direct",
+      "intent": "cancel meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_015",
+    "category": "meeting_scheduling",
+    "scenario": "cancel_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "Emily Anderson <emily.anderson@meridiangroup.com>",
+      "to": "Rachel Santos <rachel.santos@horizonx.com>",
+      "subject": "Someone canceling a scheduled meeting",
+      "body": "Dear Rachel Santos,\n\nA meeting is no longer needed or cannot happen as planned.\n\nPlease advise on the next steps.\n\nBest regards,\nEmily Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone canceling a scheduled meeting",
+      "body": "Dear Emily Anderson,\n\nThank you for reaching out. I have noted your request regarding someone canceling a scheduled meeting and will follow up shortly with the relevant details.\n\nBest regards,\nRachel Santos"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "cancel meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_016",
+    "category": "meeting_scheduling",
+    "scenario": "confirm_meeting",
+    "split": "test",
+    "incoming_email": {
+      "from": "Fatima Clark <fatima.clark@keystonepartners.com>",
+      "to": "Sarah Garcia <sarah.garcia@pinnacleconsulting.com>",
+      "subject": "Someone confirming attendance or details for a meeting",
+      "body": "Dear Sarah Garcia,\n\nConfirming time, location, agenda, or attendees for an upcoming meeting.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Clark"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone confirming attendance or details for a meeting",
+      "body": "Dear Fatima Clark,\n\nThank you for reaching out. I have noted your request regarding someone confirming attendance or details for a meeting and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Garcia"
+    },
+    "metadata": {
+      "tone": "enthusiastic",
+      "intent": "confirm meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_017",
+    "category": "meeting_scheduling",
+    "scenario": "confirm_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "Sarah Nakamura <sarah.nakamura@quantisresearch.com>",
+      "to": "Sarah Mueller <sarah.mueller@redwooddigital.com>",
+      "subject": "Someone confirming attendance or details for a meeting",
+      "body": "Dear Sarah Mueller,\n\nConfirming time, location, agenda, or attendees for an upcoming meeting.\n\nPlease advise on the next steps.\n\nBest regards,\nSarah Nakamura"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone confirming attendance or details for a meeting",
+      "body": "Dear Sarah Nakamura,\n\nThank you for reaching out. I have noted your request regarding someone confirming attendance or details for a meeting and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Mueller"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "confirm meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_018",
+    "category": "meeting_scheduling",
+    "scenario": "confirm_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "Kenji Chen <kenji.chen@brightwavesolutions.com>",
+      "to": "Robert Kim <robert.kim@cascadiatech.com>",
+      "subject": "Someone confirming attendance or details for a meeting",
+      "body": "Dear Robert Kim,\n\nConfirming time, location, agenda, or attendees for an upcoming meeting.\n\nPlease advise on the next steps.\n\nBest regards,\nKenji Chen"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone confirming attendance or details for a meeting",
+      "body": "Dear Kenji Chen,\n\nThank you for reaching out. I have noted your request regarding someone confirming attendance or details for a meeting and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Kim"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "confirm meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_019",
+    "category": "meeting_scheduling",
+    "scenario": "confirm_meeting",
+    "split": "train",
+    "incoming_email": {
+      "from": "Carlos Chen <carlos.chen@truenorthventures.com>",
+      "to": "Ahmed Garcia <ahmed.garcia@evergreensystems.com>",
+      "subject": "Someone confirming attendance or details for a meeting",
+      "body": "Dear Ahmed Garcia,\n\nConfirming time, location, agenda, or attendees for an upcoming meeting.\n\nPlease advise on the next steps.\n\nBest regards,\nCarlos Chen"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone confirming attendance or details for a meeting",
+      "body": "Dear Carlos Chen,\n\nThank you for reaching out. I have noted your request regarding someone confirming attendance or details for a meeting and will follow up shortly with the relevant details.\n\nBest regards,\nAhmed Garcia"
+    },
+    "metadata": {
+      "tone": "enthusiastic",
+      "intent": "confirm meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_020",
+    "category": "meeting_scheduling",
+    "scenario": "confirm_meeting",
+    "split": "test",
+    "incoming_email": {
+      "from": "Lisa Chen <lisa.chen@evergreensystems.com>",
+      "to": "Jennifer Smith <jennifer.smith@globalsynccorp.com>",
+      "subject": "Someone confirming attendance or details for a meeting",
+      "body": "Dear Jennifer Smith,\n\nConfirming time, location, agenda, or attendees for an upcoming meeting.\n\nPlease advise on the next steps.\n\nBest regards,\nLisa Chen"
+    },
+    "expected_reply": {
+      "subject": "Re: Someone confirming attendance or details for a meeting",
+      "body": "Dear Lisa Chen,\n\nThank you for reaching out. I have noted your request regarding someone confirming attendance or details for a meeting and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Smith"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "confirm meeting",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_021",
+    "category": "project_updates",
+    "scenario": "status_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "David Clark <david.clark@quantisresearch.com>",
+      "to": "Olivia Patel <olivia.patel@luminarai.com>",
+      "subject": "Manager or stakeholder requesting a project status update",
+      "body": "Dear Olivia Patel,\n\nSomeone in leadership needs to know where things stand on a project.\n\nPlease advise on the next steps.\n\nBest regards,\nDavid Clark"
+    },
+    "expected_reply": {
+      "subject": "Re: Manager or stakeholder requesting a project status update",
+      "body": "Dear David Clark,\n\nThank you for reaching out. I have noted your request regarding manager or stakeholder requesting a project status update and will follow up shortly with the relevant details.\n\nBest regards,\nOlivia Patel"
+    },
+    "metadata": {
+      "tone": "direct",
+      "intent": "status request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_022",
+    "category": "project_updates",
+    "scenario": "status_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Andre Smith <andre.smith@pinnacleconsulting.com>",
+      "to": "Priya Patel <priya.patel@redwooddigital.com>",
+      "subject": "Manager or stakeholder requesting a project status update",
+      "body": "Dear Priya Patel,\n\nSomeone in leadership needs to know where things stand on a project.\n\nPlease advise on the next steps.\n\nBest regards,\nAndre Smith"
+    },
+    "expected_reply": {
+      "subject": "Re: Manager or stakeholder requesting a project status update",
+      "body": "Dear Andre Smith,\n\nThank you for reaching out. I have noted your request regarding manager or stakeholder requesting a project status update and will follow up shortly with the relevant details.\n\nBest regards,\nPriya Patel"
+    },
+    "metadata": {
+      "tone": "concerned",
+      "intent": "status request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_023",
+    "category": "project_updates",
+    "scenario": "status_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Kenji Martinez <kenji.martinez@keystonepartners.com>",
+      "to": "Sarah Garcia <sarah.garcia@luminarai.com>",
+      "subject": "Manager or stakeholder requesting a project status update",
+      "body": "Dear Sarah Garcia,\n\nSomeone in leadership needs to know where things stand on a project.\n\nPlease advise on the next steps.\n\nBest regards,\nKenji Martinez"
+    },
+    "expected_reply": {
+      "subject": "Re: Manager or stakeholder requesting a project status update",
+      "body": "Dear Kenji Martinez,\n\nThank you for reaching out. I have noted your request regarding manager or stakeholder requesting a project status update and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Garcia"
+    },
+    "metadata": {
+      "tone": "concerned",
+      "intent": "status request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_024",
+    "category": "project_updates",
+    "scenario": "status_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Lisa Williams <lisa.williams@keystonepartners.com>",
+      "to": "Thomas Clark <thomas.clark@globalsynccorp.com>",
+      "subject": "Manager or stakeholder requesting a project status update",
+      "body": "Dear Thomas Clark,\n\nSomeone in leadership needs to know where things stand on a project.\n\nPlease advise on the next steps.\n\nBest regards,\nLisa Williams"
+    },
+    "expected_reply": {
+      "subject": "Re: Manager or stakeholder requesting a project status update",
+      "body": "Dear Lisa Williams,\n\nThank you for reaching out. I have noted your request regarding manager or stakeholder requesting a project status update and will follow up shortly with the relevant details.\n\nBest regards,\nThomas Clark"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "status request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_025",
+    "category": "project_updates",
+    "scenario": "status_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Wilson <rachel.wilson@frontieranalytics.com>",
+      "to": "Michael Chen <michael.chen@orbitlabs.com>",
+      "subject": "Manager or stakeholder requesting a project status update",
+      "body": "Dear Michael Chen,\n\nSomeone in leadership needs to know where things stand on a project.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Wilson"
+    },
+    "expected_reply": {
+      "subject": "Re: Manager or stakeholder requesting a project status update",
+      "body": "Dear Rachel Wilson,\n\nThank you for reaching out. I have noted your request regarding manager or stakeholder requesting a project status update and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Chen"
+    },
+    "metadata": {
+      "tone": "direct",
+      "intent": "status request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_026",
+    "category": "project_updates",
+    "scenario": "deadline_extension",
+    "split": "train",
+    "incoming_email": {
+      "from": "Ahmed Williams <ahmed.williams@frontieranalytics.com>",
+      "to": "Robert Santos <robert.santos@pinnacleconsulting.com>",
+      "subject": "Team member requesting an extension on a project deadline",
+      "body": "Dear Robert Santos,\n\nUnforeseen issues require more time to complete deliverables.\n\nPlease advise on the next steps.\n\nBest regards,\nAhmed Williams"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member requesting an extension on a project deadline",
+      "body": "Dear Ahmed Williams,\n\nThank you for reaching out. I have noted your request regarding team member requesting an extension on a project deadline and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Santos"
+    },
+    "metadata": {
+      "tone": "urgent",
+      "intent": "deadline extension",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_027",
+    "category": "project_updates",
+    "scenario": "deadline_extension",
+    "split": "train",
+    "incoming_email": {
+      "from": "Sarah Brown <sarah.brown@dataforgeinc.com>",
+      "to": "Jennifer Martinez <jennifer.martinez@nexgensoftware.com>",
+      "subject": "Team member requesting an extension on a project deadline",
+      "body": "Dear Jennifer Martinez,\n\nUnforeseen issues require more time to complete deliverables.\n\nPlease advise on the next steps.\n\nBest regards,\nSarah Brown"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member requesting an extension on a project deadline",
+      "body": "Dear Sarah Brown,\n\nThank you for reaching out. I have noted your request regarding team member requesting an extension on a project deadline and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Martinez"
+    },
+    "metadata": {
+      "tone": "urgent",
+      "intent": "deadline extension",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_028",
+    "category": "project_updates",
+    "scenario": "deadline_extension",
+    "split": "test",
+    "incoming_email": {
+      "from": "Priya Brown <priya.brown@redwooddigital.com>",
+      "to": "Rachel Santos <rachel.santos@luminarai.com>",
+      "subject": "Team member requesting an extension on a project deadline",
+      "body": "Dear Rachel Santos,\n\nUnforeseen issues require more time to complete deliverables.\n\nPlease advise on the next steps.\n\nBest regards,\nPriya Brown"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member requesting an extension on a project deadline",
+      "body": "Dear Priya Brown,\n\nThank you for reaching out. I have noted your request regarding team member requesting an extension on a project deadline and will follow up shortly with the relevant details.\n\nBest regards,\nRachel Santos"
+    },
+    "metadata": {
+      "tone": "apologetic",
+      "intent": "deadline extension",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_029",
+    "category": "project_updates",
+    "scenario": "deadline_extension",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Anderson <rachel.anderson@truenorthventures.com>",
+      "to": "Yuki Patel <yuki.patel@quantisresearch.com>",
+      "subject": "Team member requesting an extension on a project deadline",
+      "body": "Dear Yuki Patel,\n\nUnforeseen issues require more time to complete deliverables.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member requesting an extension on a project deadline",
+      "body": "Dear Rachel Anderson,\n\nThank you for reaching out. I have noted your request regarding team member requesting an extension on a project deadline and will follow up shortly with the relevant details.\n\nBest regards,\nYuki Patel"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "deadline extension",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_030",
+    "category": "project_updates",
+    "scenario": "deadline_extension",
+    "split": "test",
+    "incoming_email": {
+      "from": "Priya Lee <priya.lee@meridiangroup.com>",
+      "to": "Jennifer Ali <jennifer.ali@upliftmedia.com>",
+      "subject": "Team member requesting an extension on a project deadline",
+      "body": "Dear Jennifer Ali,\n\nUnforeseen issues require more time to complete deliverables.\n\nPlease advise on the next steps.\n\nBest regards,\nPriya Lee"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member requesting an extension on a project deadline",
+      "body": "Dear Priya Lee,\n\nThank you for reaching out. I have noted your request regarding team member requesting an extension on a project deadline and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Ali"
+    },
+    "metadata": {
+      "tone": "apologetic",
+      "intent": "deadline extension",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_031",
+    "category": "project_updates",
+    "scenario": "blocker_report",
+    "split": "train",
+    "incoming_email": {
+      "from": "Michael Williams <michael.williams@stellarplatforms.com>",
+      "to": "Ahmed Kim <ahmed.kim@dataforgeinc.com>",
+      "subject": "Team member reporting a blocker or impediment",
+      "body": "Dear Ahmed Kim,\n\nA technical, resource, or dependency issue is preventing progress.\n\nPlease advise on the next steps.\n\nBest regards,\nMichael Williams"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member reporting a blocker or impediment",
+      "body": "Dear Michael Williams,\n\nThank you for reaching out. I have noted your request regarding team member reporting a blocker or impediment and will follow up shortly with the relevant details.\n\nBest regards,\nAhmed Kim"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "blocker report",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_032",
+    "category": "project_updates",
+    "scenario": "blocker_report",
+    "split": "train",
+    "incoming_email": {
+      "from": "Sarah Garcia <sarah.garcia@cascadiatech.com>",
+      "to": "Michael Kim <michael.kim@cascadiatech.com>",
+      "subject": "Team member reporting a blocker or impediment",
+      "body": "Dear Michael Kim,\n\nA technical, resource, or dependency issue is preventing progress.\n\nPlease advise on the next steps.\n\nBest regards,\nSarah Garcia"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member reporting a blocker or impediment",
+      "body": "Dear Sarah Garcia,\n\nThank you for reaching out. I have noted your request regarding team member reporting a blocker or impediment and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Kim"
+    },
+    "metadata": {
+      "tone": "urgent",
+      "intent": "blocker report",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_033",
+    "category": "project_updates",
+    "scenario": "blocker_report",
+    "split": "train",
+    "incoming_email": {
+      "from": "Yuki Anderson <yuki.anderson@nexgensoftware.com>",
+      "to": "Ahmed Kim <ahmed.kim@quantisresearch.com>",
+      "subject": "Team member reporting a blocker or impediment",
+      "body": "Dear Ahmed Kim,\n\nA technical, resource, or dependency issue is preventing progress.\n\nPlease advise on the next steps.\n\nBest regards,\nYuki Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member reporting a blocker or impediment",
+      "body": "Dear Yuki Anderson,\n\nThank you for reaching out. I have noted your request regarding team member reporting a blocker or impediment and will follow up shortly with the relevant details.\n\nBest regards,\nAhmed Kim"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "blocker report",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_034",
+    "category": "project_updates",
+    "scenario": "blocker_report",
+    "split": "train",
+    "incoming_email": {
+      "from": "Maria Clark <maria.clark@horizonx.com>",
+      "to": "Priya Taylor <priya.taylor@innovault.com>",
+      "subject": "Team member reporting a blocker or impediment",
+      "body": "Dear Priya Taylor,\n\nA technical, resource, or dependency issue is preventing progress.\n\nPlease advise on the next steps.\n\nBest regards,\nMaria Clark"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member reporting a blocker or impediment",
+      "body": "Dear Maria Clark,\n\nThank you for reaching out. I have noted your request regarding team member reporting a blocker or impediment and will follow up shortly with the relevant details.\n\nBest regards,\nPriya Taylor"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "blocker report",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_035",
+    "category": "project_updates",
+    "scenario": "blocker_report",
+    "split": "train",
+    "incoming_email": {
+      "from": "David Mueller <david.mueller@apexdynamics.com>",
+      "to": "Chen Garcia <chen.garcia@dataforgeinc.com>",
+      "subject": "Team member reporting a blocker or impediment",
+      "body": "Dear Chen Garcia,\n\nA technical, resource, or dependency issue is preventing progress.\n\nPlease advise on the next steps.\n\nBest regards,\nDavid Mueller"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member reporting a blocker or impediment",
+      "body": "Dear David Mueller,\n\nThank you for reaching out. I have noted your request regarding team member reporting a blocker or impediment and will follow up shortly with the relevant details.\n\nBest regards,\nChen Garcia"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "blocker report",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_036",
+    "category": "project_updates",
+    "scenario": "milestone_completion",
+    "split": "train",
+    "incoming_email": {
+      "from": "Emily Williams <emily.williams@brightwavesolutions.com>",
+      "to": "Yuki Chen <yuki.chen@truenorthventures.com>",
+      "subject": "Team member announcing completion of a project milestone",
+      "body": "Dear Yuki Chen,\n\nA significant phase or deliverable has been completed successfully.\n\nPlease advise on the next steps.\n\nBest regards,\nEmily Williams"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member announcing completion of a project milestone",
+      "body": "Dear Emily Williams,\n\nThank you for reaching out. I have noted your request regarding team member announcing completion of a project milestone and will follow up shortly with the relevant details.\n\nBest regards,\nYuki Chen"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "milestone completion",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_037",
+    "category": "project_updates",
+    "scenario": "milestone_completion",
+    "split": "test",
+    "incoming_email": {
+      "from": "Fatima Ali <fatima.ali@orbitlabs.com>",
+      "to": "Sarah Singh <sarah.singh@redwooddigital.com>",
+      "subject": "Team member announcing completion of a project milestone",
+      "body": "Dear Sarah Singh,\n\nA significant phase or deliverable has been completed successfully.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Ali"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member announcing completion of a project milestone",
+      "body": "Dear Fatima Ali,\n\nThank you for reaching out. I have noted your request regarding team member announcing completion of a project milestone and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Singh"
+    },
+    "metadata": {
+      "tone": "enthusiastic",
+      "intent": "milestone completion",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_038",
+    "category": "project_updates",
+    "scenario": "milestone_completion",
+    "split": "train",
+    "incoming_email": {
+      "from": "Robert Martinez <robert.martinez@upliftmedia.com>",
+      "to": "Lisa Brown <lisa.brown@upliftmedia.com>",
+      "subject": "Team member announcing completion of a project milestone",
+      "body": "Dear Lisa Brown,\n\nA significant phase or deliverable has been completed successfully.\n\nPlease advise on the next steps.\n\nBest regards,\nRobert Martinez"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member announcing completion of a project milestone",
+      "body": "Dear Robert Martinez,\n\nThank you for reaching out. I have noted your request regarding team member announcing completion of a project milestone and will follow up shortly with the relevant details.\n\nBest regards,\nLisa Brown"
+    },
+    "metadata": {
+      "tone": "enthusiastic",
+      "intent": "milestone completion",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_039",
+    "category": "project_updates",
+    "scenario": "milestone_completion",
+    "split": "train",
+    "incoming_email": {
+      "from": "David Patel <david.patel@apexdynamics.com>",
+      "to": "Olivia Williams <olivia.williams@orbitlabs.com>",
+      "subject": "Team member announcing completion of a project milestone",
+      "body": "Dear Olivia Williams,\n\nA significant phase or deliverable has been completed successfully.\n\nPlease advise on the next steps.\n\nBest regards,\nDavid Patel"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member announcing completion of a project milestone",
+      "body": "Dear David Patel,\n\nThank you for reaching out. I have noted your request regarding team member announcing completion of a project milestone and will follow up shortly with the relevant details.\n\nBest regards,\nOlivia Williams"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "milestone completion",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_040",
+    "category": "project_updates",
+    "scenario": "milestone_completion",
+    "split": "test",
+    "incoming_email": {
+      "from": "Andre Ali <andre.ali@evergreensystems.com>",
+      "to": "Jennifer Anderson <jennifer.anderson@apexdynamics.com>",
+      "subject": "Team member announcing completion of a project milestone",
+      "body": "Dear Jennifer Anderson,\n\nA significant phase or deliverable has been completed successfully.\n\nPlease advise on the next steps.\n\nBest regards,\nAndre Ali"
+    },
+    "expected_reply": {
+      "subject": "Re: Team member announcing completion of a project milestone",
+      "body": "Dear Andre Ali,\n\nThank you for reaching out. I have noted your request regarding team member announcing completion of a project milestone and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Anderson"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "milestone completion",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_041",
+    "category": "customer_support",
+    "scenario": "complaint",
+    "split": "train",
+    "incoming_email": {
+      "from": "Andre Singh <andre.singh@frontieranalytics.com>",
+      "to": "Robert Patel <robert.patel@innovault.com>",
+      "subject": "Customer filing a complaint about a product or service",
+      "body": "Dear Robert Patel,\n\nA customer has had a negative experience and is reaching out.\n\nPlease advise on the next steps.\n\nBest regards,\nAndre Singh"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer filing a complaint about a product or service",
+      "body": "Dear Andre Singh,\n\nThank you for reaching out. I have noted your request regarding customer filing a complaint about a product or service and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Patel"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "complaint",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_042",
+    "category": "customer_support",
+    "scenario": "complaint",
+    "split": "train",
+    "incoming_email": {
+      "from": "Fatima Ali <fatima.ali@cascadiatech.com>",
+      "to": "Andre Williams <andre.williams@stellarplatforms.com>",
+      "subject": "Customer filing a complaint about a product or service",
+      "body": "Dear Andre Williams,\n\nA customer has had a negative experience and is reaching out.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Ali"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer filing a complaint about a product or service",
+      "body": "Dear Fatima Ali,\n\nThank you for reaching out. I have noted your request regarding customer filing a complaint about a product or service and will follow up shortly with the relevant details.\n\nBest regards,\nAndre Williams"
+    },
+    "metadata": {
+      "tone": "angry",
+      "intent": "complaint",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_043",
+    "category": "customer_support",
+    "scenario": "complaint",
+    "split": "train",
+    "incoming_email": {
+      "from": "Chen Patel <chen.patel@redwooddigital.com>",
+      "to": "Fatima Taylor <fatima.taylor@apexdynamics.com>",
+      "subject": "Customer filing a complaint about a product or service",
+      "body": "Dear Fatima Taylor,\n\nA customer has had a negative experience and is reaching out.\n\nPlease advise on the next steps.\n\nBest regards,\nChen Patel"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer filing a complaint about a product or service",
+      "body": "Dear Chen Patel,\n\nThank you for reaching out. I have noted your request regarding customer filing a complaint about a product or service and will follow up shortly with the relevant details.\n\nBest regards,\nFatima Taylor"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "complaint",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_044",
+    "category": "customer_support",
+    "scenario": "complaint",
+    "split": "train",
+    "incoming_email": {
+      "from": "David Patel <david.patel@pinnacleconsulting.com>",
+      "to": "Michael Mueller <michael.mueller@nexgensoftware.com>",
+      "subject": "Customer filing a complaint about a product or service",
+      "body": "Dear Michael Mueller,\n\nA customer has had a negative experience and is reaching out.\n\nPlease advise on the next steps.\n\nBest regards,\nDavid Patel"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer filing a complaint about a product or service",
+      "body": "Dear David Patel,\n\nThank you for reaching out. I have noted your request regarding customer filing a complaint about a product or service and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Mueller"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "complaint",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_045",
+    "category": "customer_support",
+    "scenario": "complaint",
+    "split": "test",
+    "incoming_email": {
+      "from": "Emily Johnson <emily.johnson@apexdynamics.com>",
+      "to": "Jennifer Kim <jennifer.kim@quantisresearch.com>",
+      "subject": "Customer filing a complaint about a product or service",
+      "body": "Dear Jennifer Kim,\n\nA customer has had a negative experience and is reaching out.\n\nPlease advise on the next steps.\n\nBest regards,\nEmily Johnson"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer filing a complaint about a product or service",
+      "body": "Dear Emily Johnson,\n\nThank you for reaching out. I have noted your request regarding customer filing a complaint about a product or service and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Kim"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "complaint",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_046",
+    "category": "customer_support",
+    "scenario": "refund_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Ahmed Martinez <ahmed.martinez@apexdynamics.com>",
+      "to": "Kenji Wilson <kenji.wilson@frontieranalytics.com>",
+      "subject": "Customer requesting a refund for a purchase",
+      "body": "Dear Kenji Wilson,\n\nA customer wants their money back due to dissatisfaction or error.\n\nPlease advise on the next steps.\n\nBest regards,\nAhmed Martinez"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer requesting a refund for a purchase",
+      "body": "Dear Ahmed Martinez,\n\nThank you for reaching out. I have noted your request regarding customer requesting a refund for a purchase and will follow up shortly with the relevant details.\n\nBest regards,\nKenji Wilson"
+    },
+    "metadata": {
+      "tone": "firm",
+      "intent": "refund request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_047",
+    "category": "customer_support",
+    "scenario": "refund_request",
+    "split": "test",
+    "incoming_email": {
+      "from": "Maria Anderson <maria.anderson@keystonepartners.com>",
+      "to": "Thomas Martinez <thomas.martinez@upliftmedia.com>",
+      "subject": "Customer requesting a refund for a purchase",
+      "body": "Dear Thomas Martinez,\n\nA customer wants their money back due to dissatisfaction or error.\n\nPlease advise on the next steps.\n\nBest regards,\nMaria Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer requesting a refund for a purchase",
+      "body": "Dear Maria Anderson,\n\nThank you for reaching out. I have noted your request regarding customer requesting a refund for a purchase and will follow up shortly with the relevant details.\n\nBest regards,\nThomas Martinez"
+    },
+    "metadata": {
+      "tone": "polite",
+      "intent": "refund request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_048",
+    "category": "customer_support",
+    "scenario": "refund_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Patel <rachel.patel@evergreensystems.com>",
+      "to": "Maria Smith <maria.smith@nexgensoftware.com>",
+      "subject": "Customer requesting a refund for a purchase",
+      "body": "Dear Maria Smith,\n\nA customer wants their money back due to dissatisfaction or error.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Patel"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer requesting a refund for a purchase",
+      "body": "Dear Rachel Patel,\n\nThank you for reaching out. I have noted your request regarding customer requesting a refund for a purchase and will follow up shortly with the relevant details.\n\nBest regards,\nMaria Smith"
+    },
+    "metadata": {
+      "tone": "firm",
+      "intent": "refund request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_049",
+    "category": "customer_support",
+    "scenario": "refund_request",
+    "split": "test",
+    "incoming_email": {
+      "from": "Fatima Ali <fatima.ali@apexdynamics.com>",
+      "to": "Sarah Thompson <sarah.thompson@orbitlabs.com>",
+      "subject": "Customer requesting a refund for a purchase",
+      "body": "Dear Sarah Thompson,\n\nA customer wants their money back due to dissatisfaction or error.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Ali"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer requesting a refund for a purchase",
+      "body": "Dear Fatima Ali,\n\nThank you for reaching out. I have noted your request regarding customer requesting a refund for a purchase and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Thompson"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "refund request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_050",
+    "category": "customer_support",
+    "scenario": "refund_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Jennifer Anderson <jennifer.anderson@evergreensystems.com>",
+      "to": "Emily Kim <emily.kim@apexdynamics.com>",
+      "subject": "Customer requesting a refund for a purchase",
+      "body": "Dear Emily Kim,\n\nA customer wants their money back due to dissatisfaction or error.\n\nPlease advise on the next steps.\n\nBest regards,\nJennifer Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer requesting a refund for a purchase",
+      "body": "Dear Jennifer Anderson,\n\nThank you for reaching out. I have noted your request regarding customer requesting a refund for a purchase and will follow up shortly with the relevant details.\n\nBest regards,\nEmily Kim"
+    },
+    "metadata": {
+      "tone": "firm",
+      "intent": "refund request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_051",
+    "category": "customer_support",
+    "scenario": "product_inquiry",
+    "split": "test",
+    "incoming_email": {
+      "from": "Andre Wilson <andre.wilson@nexgensoftware.com>",
+      "to": "Rachel Patel <rachel.patel@keystonepartners.com>",
+      "subject": "Customer asking about product features, availability, or compatibility",
+      "body": "Dear Rachel Patel,\n\nA potential or existing customer wants information before a purchase decision.\n\nPlease advise on the next steps.\n\nBest regards,\nAndre Wilson"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer asking about product features, availability, or compatibility",
+      "body": "Dear Andre Wilson,\n\nThank you for reaching out. I have noted your request regarding customer asking about product features, availability, or compatibility and will follow up shortly with the relevant details.\n\nBest regards,\nRachel Patel"
+    },
+    "metadata": {
+      "tone": "curious",
+      "intent": "product inquiry",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_052",
+    "category": "customer_support",
+    "scenario": "product_inquiry",
+    "split": "train",
+    "incoming_email": {
+      "from": "Kenji Mueller <kenji.mueller@pinnacleconsulting.com>",
+      "to": "Ahmed Clark <ahmed.clark@cascadiatech.com>",
+      "subject": "Customer asking about product features, availability, or compatibility",
+      "body": "Dear Ahmed Clark,\n\nA potential or existing customer wants information before a purchase decision.\n\nPlease advise on the next steps.\n\nBest regards,\nKenji Mueller"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer asking about product features, availability, or compatibility",
+      "body": "Dear Kenji Mueller,\n\nThank you for reaching out. I have noted your request regarding customer asking about product features, availability, or compatibility and will follow up shortly with the relevant details.\n\nBest regards,\nAhmed Clark"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "product inquiry",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_053",
+    "category": "customer_support",
+    "scenario": "product_inquiry",
+    "split": "train",
+    "incoming_email": {
+      "from": "Kenji Wilson <kenji.wilson@pinnacleconsulting.com>",
+      "to": "Jennifer Mueller <jennifer.mueller@apexdynamics.com>",
+      "subject": "Customer asking about product features, availability, or compatibility",
+      "body": "Dear Jennifer Mueller,\n\nA potential or existing customer wants information before a purchase decision.\n\nPlease advise on the next steps.\n\nBest regards,\nKenji Wilson"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer asking about product features, availability, or compatibility",
+      "body": "Dear Kenji Wilson,\n\nThank you for reaching out. I have noted your request regarding customer asking about product features, availability, or compatibility and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Mueller"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "product inquiry",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_054",
+    "category": "customer_support",
+    "scenario": "product_inquiry",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Lee <rachel.lee@nexgensoftware.com>",
+      "to": "Andre Garcia <andre.garcia@truenorthventures.com>",
+      "subject": "Customer asking about product features, availability, or compatibility",
+      "body": "Dear Andre Garcia,\n\nA potential or existing customer wants information before a purchase decision.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Lee"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer asking about product features, availability, or compatibility",
+      "body": "Dear Rachel Lee,\n\nThank you for reaching out. I have noted your request regarding customer asking about product features, availability, or compatibility and will follow up shortly with the relevant details.\n\nBest regards,\nAndre Garcia"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "product inquiry",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_055",
+    "category": "customer_support",
+    "scenario": "product_inquiry",
+    "split": "train",
+    "incoming_email": {
+      "from": "Robert Kim <robert.kim@stellarplatforms.com>",
+      "to": "Yuki Clark <yuki.clark@quantisresearch.com>",
+      "subject": "Customer asking about product features, availability, or compatibility",
+      "body": "Dear Yuki Clark,\n\nA potential or existing customer wants information before a purchase decision.\n\nPlease advise on the next steps.\n\nBest regards,\nRobert Kim"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer asking about product features, availability, or compatibility",
+      "body": "Dear Robert Kim,\n\nThank you for reaching out. I have noted your request regarding customer asking about product features, availability, or compatibility and will follow up shortly with the relevant details.\n\nBest regards,\nYuki Clark"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "product inquiry",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_056",
+    "category": "customer_support",
+    "scenario": "billing_issue",
+    "split": "train",
+    "incoming_email": {
+      "from": "Carlos Brown <carlos.brown@keystonepartners.com>",
+      "to": "James Brown <james.brown@brightwavesolutions.com>",
+      "subject": "Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear James Brown,\n\nUnexpected charges, failed payments, or invoice discrepancies.\n\nPlease advise on the next steps.\n\nBest regards,\nCarlos Brown"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Carlos Brown,\n\nThank you for reaching out. I have noted your request regarding customer reporting a billing discrepancy or payment problem and will follow up shortly with the relevant details.\n\nBest regards,\nJames Brown"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "billing issue",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_057",
+    "category": "customer_support",
+    "scenario": "billing_issue",
+    "split": "train",
+    "incoming_email": {
+      "from": "Yuki Santos <yuki.santos@orbitlabs.com>",
+      "to": "Michael Nakamura <michael.nakamura@innovault.com>",
+      "subject": "Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Michael Nakamura,\n\nUnexpected charges, failed payments, or invoice discrepancies.\n\nPlease advise on the next steps.\n\nBest regards,\nYuki Santos"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Yuki Santos,\n\nThank you for reaching out. I have noted your request regarding customer reporting a billing discrepancy or payment problem and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Nakamura"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "billing issue",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_058",
+    "category": "customer_support",
+    "scenario": "billing_issue",
+    "split": "train",
+    "incoming_email": {
+      "from": "Priya Wilson <priya.wilson@orbitlabs.com>",
+      "to": "Priya Johnson <priya.johnson@upliftmedia.com>",
+      "subject": "Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Priya Johnson,\n\nUnexpected charges, failed payments, or invoice discrepancies.\n\nPlease advise on the next steps.\n\nBest regards,\nPriya Wilson"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Priya Wilson,\n\nThank you for reaching out. I have noted your request regarding customer reporting a billing discrepancy or payment problem and will follow up shortly with the relevant details.\n\nBest regards,\nPriya Johnson"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "billing issue",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_059",
+    "category": "customer_support",
+    "scenario": "billing_issue",
+    "split": "train",
+    "incoming_email": {
+      "from": "Yuki Anderson <yuki.anderson@stellarplatforms.com>",
+      "to": "Michael Martinez <michael.martinez@redwooddigital.com>",
+      "subject": "Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Michael Martinez,\n\nUnexpected charges, failed payments, or invoice discrepancies.\n\nPlease advise on the next steps.\n\nBest regards,\nYuki Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Yuki Anderson,\n\nThank you for reaching out. I have noted your request regarding customer reporting a billing discrepancy or payment problem and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Martinez"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "billing issue",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_060",
+    "category": "customer_support",
+    "scenario": "billing_issue",
+    "split": "train",
+    "incoming_email": {
+      "from": "Fatima Mueller <fatima.mueller@dataforgeinc.com>",
+      "to": "James Thompson <james.thompson@pinnacleconsulting.com>",
+      "subject": "Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear James Thompson,\n\nUnexpected charges, failed payments, or invoice discrepancies.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Mueller"
+    },
+    "expected_reply": {
+      "subject": "Re: Customer reporting a billing discrepancy or payment problem",
+      "body": "Dear Fatima Mueller,\n\nThank you for reaching out. I have noted your request regarding customer reporting a billing discrepancy or payment problem and will follow up shortly with the relevant details.\n\nBest regards,\nJames Thompson"
+    },
+    "metadata": {
+      "tone": "frustrated",
+      "intent": "billing issue",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_061",
+    "category": "hr_internal",
+    "scenario": "pto_request",
+    "split": "test",
+    "incoming_email": {
+      "from": "Priya Taylor <priya.taylor@horizonx.com>",
+      "to": "Robert Clark <robert.clark@innovault.com>",
+      "subject": "Employee requesting paid time off",
+      "body": "Dear Robert Clark,\n\nAn employee needs to take vacation, sick leave, or personal days.\n\nPlease advise on the next steps.\n\nBest regards,\nPriya Taylor"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee requesting paid time off",
+      "body": "Dear Priya Taylor,\n\nThank you for reaching out. I have noted your request regarding employee requesting paid time off and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Clark"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "pto request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_062",
+    "category": "hr_internal",
+    "scenario": "pto_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Ahmed Santos <ahmed.santos@cascadiatech.com>",
+      "to": "Jennifer Martinez <jennifer.martinez@stellarplatforms.com>",
+      "subject": "Employee requesting paid time off",
+      "body": "Dear Jennifer Martinez,\n\nAn employee needs to take vacation, sick leave, or personal days.\n\nPlease advise on the next steps.\n\nBest regards,\nAhmed Santos"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee requesting paid time off",
+      "body": "Dear Ahmed Santos,\n\nThank you for reaching out. I have noted your request regarding employee requesting paid time off and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Martinez"
+    },
+    "metadata": {
+      "tone": "apologetic",
+      "intent": "pto request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_063",
+    "category": "hr_internal",
+    "scenario": "pto_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Priya Kim <priya.kim@dataforgeinc.com>",
+      "to": "Jennifer Nakamura <jennifer.nakamura@stellarplatforms.com>",
+      "subject": "Employee requesting paid time off",
+      "body": "Dear Jennifer Nakamura,\n\nAn employee needs to take vacation, sick leave, or personal days.\n\nPlease advise on the next steps.\n\nBest regards,\nPriya Kim"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee requesting paid time off",
+      "body": "Dear Priya Kim,\n\nThank you for reaching out. I have noted your request regarding employee requesting paid time off and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Nakamura"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "pto request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_064",
+    "category": "hr_internal",
+    "scenario": "pto_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Kenji Taylor <kenji.taylor@globalsynccorp.com>",
+      "to": "Robert Brown <robert.brown@innovault.com>",
+      "subject": "Employee requesting paid time off",
+      "body": "Dear Robert Brown,\n\nAn employee needs to take vacation, sick leave, or personal days.\n\nPlease advise on the next steps.\n\nBest regards,\nKenji Taylor"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee requesting paid time off",
+      "body": "Dear Kenji Taylor,\n\nThank you for reaching out. I have noted your request regarding employee requesting paid time off and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Brown"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "pto request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_065",
+    "category": "hr_internal",
+    "scenario": "pto_request",
+    "split": "train",
+    "incoming_email": {
+      "from": "Olivia Chen <olivia.chen@dataforgeinc.com>",
+      "to": "Jennifer Anderson <jennifer.anderson@upliftmedia.com>",
+      "subject": "Employee requesting paid time off",
+      "body": "Dear Jennifer Anderson,\n\nAn employee needs to take vacation, sick leave, or personal days.\n\nPlease advise on the next steps.\n\nBest regards,\nOlivia Chen"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee requesting paid time off",
+      "body": "Dear Olivia Chen,\n\nThank you for reaching out. I have noted your request regarding employee requesting paid time off and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Anderson"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "pto request",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_066",
+    "category": "hr_internal",
+    "scenario": "onboarding_question",
+    "split": "test",
+    "incoming_email": {
+      "from": "Emily Patel <emily.patel@brightwavesolutions.com>",
+      "to": "Michael Thompson <michael.thompson@brightwavesolutions.com>",
+      "subject": "New hire asking about onboarding processes or resources",
+      "body": "Dear Michael Thompson,\n\nA recently hired employee needs help navigating their first weeks.\n\nPlease advise on the next steps.\n\nBest regards,\nEmily Patel"
+    },
+    "expected_reply": {
+      "subject": "Re: New hire asking about onboarding processes or resources",
+      "body": "Dear Emily Patel,\n\nThank you for reaching out. I have noted your request regarding new hire asking about onboarding processes or resources and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Thompson"
+    },
+    "metadata": {
+      "tone": "eager",
+      "intent": "onboarding question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_067",
+    "category": "hr_internal",
+    "scenario": "onboarding_question",
+    "split": "train",
+    "incoming_email": {
+      "from": "Olivia Williams <olivia.williams@pinnacleconsulting.com>",
+      "to": "Robert Smith <robert.smith@evergreensystems.com>",
+      "subject": "New hire asking about onboarding processes or resources",
+      "body": "Dear Robert Smith,\n\nA recently hired employee needs help navigating their first weeks.\n\nPlease advise on the next steps.\n\nBest regards,\nOlivia Williams"
+    },
+    "expected_reply": {
+      "subject": "Re: New hire asking about onboarding processes or resources",
+      "body": "Dear Olivia Williams,\n\nThank you for reaching out. I have noted your request regarding new hire asking about onboarding processes or resources and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Smith"
+    },
+    "metadata": {
+      "tone": "curious",
+      "intent": "onboarding question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_068",
+    "category": "hr_internal",
+    "scenario": "onboarding_question",
+    "split": "train",
+    "incoming_email": {
+      "from": "Olivia Santos <olivia.santos@apexdynamics.com>",
+      "to": "Jennifer Smith <jennifer.smith@luminarai.com>",
+      "subject": "New hire asking about onboarding processes or resources",
+      "body": "Dear Jennifer Smith,\n\nA recently hired employee needs help navigating their first weeks.\n\nPlease advise on the next steps.\n\nBest regards,\nOlivia Santos"
+    },
+    "expected_reply": {
+      "subject": "Re: New hire asking about onboarding processes or resources",
+      "body": "Dear Olivia Santos,\n\nThank you for reaching out. I have noted your request regarding new hire asking about onboarding processes or resources and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Smith"
+    },
+    "metadata": {
+      "tone": "eager",
+      "intent": "onboarding question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_069",
+    "category": "hr_internal",
+    "scenario": "onboarding_question",
+    "split": "test",
+    "incoming_email": {
+      "from": "Robert Patel <robert.patel@apexdynamics.com>",
+      "to": "Emily Williams <emily.williams@pinnacleconsulting.com>",
+      "subject": "New hire asking about onboarding processes or resources",
+      "body": "Dear Emily Williams,\n\nA recently hired employee needs help navigating their first weeks.\n\nPlease advise on the next steps.\n\nBest regards,\nRobert Patel"
+    },
+    "expected_reply": {
+      "subject": "Re: New hire asking about onboarding processes or resources",
+      "body": "Dear Robert Patel,\n\nThank you for reaching out. I have noted your request regarding new hire asking about onboarding processes or resources and will follow up shortly with the relevant details.\n\nBest regards,\nEmily Williams"
+    },
+    "metadata": {
+      "tone": "curious",
+      "intent": "onboarding question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_070",
+    "category": "hr_internal",
+    "scenario": "onboarding_question",
+    "split": "train",
+    "incoming_email": {
+      "from": "Lisa Chen <lisa.chen@quantisresearch.com>",
+      "to": "Andre Williams <andre.williams@brightwavesolutions.com>",
+      "subject": "New hire asking about onboarding processes or resources",
+      "body": "Dear Andre Williams,\n\nA recently hired employee needs help navigating their first weeks.\n\nPlease advise on the next steps.\n\nBest regards,\nLisa Chen"
+    },
+    "expected_reply": {
+      "subject": "Re: New hire asking about onboarding processes or resources",
+      "body": "Dear Lisa Chen,\n\nThank you for reaching out. I have noted your request regarding new hire asking about onboarding processes or resources and will follow up shortly with the relevant details.\n\nBest regards,\nAndre Williams"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "onboarding question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_071",
+    "category": "hr_internal",
+    "scenario": "policy_clarification",
+    "split": "test",
+    "incoming_email": {
+      "from": "Lisa Smith <lisa.smith@apexdynamics.com>",
+      "to": "Carlos Mueller <carlos.mueller@evergreensystems.com>",
+      "subject": "Employee asking for clarification on a company policy",
+      "body": "Dear Carlos Mueller,\n\nAn employee needs to understand remote work, expense, or conduct policies.\n\nPlease advise on the next steps.\n\nBest regards,\nLisa Smith"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee asking for clarification on a company policy",
+      "body": "Dear Lisa Smith,\n\nThank you for reaching out. I have noted your request regarding employee asking for clarification on a company policy and will follow up shortly with the relevant details.\n\nBest regards,\nCarlos Mueller"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "policy clarification",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_072",
+    "category": "hr_internal",
+    "scenario": "policy_clarification",
+    "split": "train",
+    "incoming_email": {
+      "from": "Robert Lee <robert.lee@upliftmedia.com>",
+      "to": "Ahmed Kim <ahmed.kim@evergreensystems.com>",
+      "subject": "Employee asking for clarification on a company policy",
+      "body": "Dear Ahmed Kim,\n\nAn employee needs to understand remote work, expense, or conduct policies.\n\nPlease advise on the next steps.\n\nBest regards,\nRobert Lee"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee asking for clarification on a company policy",
+      "body": "Dear Robert Lee,\n\nThank you for reaching out. I have noted your request regarding employee asking for clarification on a company policy and will follow up shortly with the relevant details.\n\nBest regards,\nAhmed Kim"
+    },
+    "metadata": {
+      "tone": "concerned",
+      "intent": "policy clarification",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_073",
+    "category": "hr_internal",
+    "scenario": "policy_clarification",
+    "split": "train",
+    "incoming_email": {
+      "from": "Lisa Wilson <lisa.wilson@nexgensoftware.com>",
+      "to": "Carlos Lee <carlos.lee@orbitlabs.com>",
+      "subject": "Employee asking for clarification on a company policy",
+      "body": "Dear Carlos Lee,\n\nAn employee needs to understand remote work, expense, or conduct policies.\n\nPlease advise on the next steps.\n\nBest regards,\nLisa Wilson"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee asking for clarification on a company policy",
+      "body": "Dear Lisa Wilson,\n\nThank you for reaching out. I have noted your request regarding employee asking for clarification on a company policy and will follow up shortly with the relevant details.\n\nBest regards,\nCarlos Lee"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "policy clarification",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_074",
+    "category": "hr_internal",
+    "scenario": "policy_clarification",
+    "split": "train",
+    "incoming_email": {
+      "from": "Emily Anderson <emily.anderson@meridiangroup.com>",
+      "to": "James Garcia <james.garcia@luminarai.com>",
+      "subject": "Employee asking for clarification on a company policy",
+      "body": "Dear James Garcia,\n\nAn employee needs to understand remote work, expense, or conduct policies.\n\nPlease advise on the next steps.\n\nBest regards,\nEmily Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee asking for clarification on a company policy",
+      "body": "Dear Emily Anderson,\n\nThank you for reaching out. I have noted your request regarding employee asking for clarification on a company policy and will follow up shortly with the relevant details.\n\nBest regards,\nJames Garcia"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "policy clarification",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_075",
+    "category": "hr_internal",
+    "scenario": "policy_clarification",
+    "split": "train",
+    "incoming_email": {
+      "from": "Thomas Kim <thomas.kim@frontieranalytics.com>",
+      "to": "Sarah Brown <sarah.brown@dataforgeinc.com>",
+      "subject": "Employee asking for clarification on a company policy",
+      "body": "Dear Sarah Brown,\n\nAn employee needs to understand remote work, expense, or conduct policies.\n\nPlease advise on the next steps.\n\nBest regards,\nThomas Kim"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee asking for clarification on a company policy",
+      "body": "Dear Thomas Kim,\n\nThank you for reaching out. I have noted your request regarding employee asking for clarification on a company policy and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Brown"
+    },
+    "metadata": {
+      "tone": "casual",
+      "intent": "policy clarification",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_076",
+    "category": "hr_internal",
+    "scenario": "feedback",
+    "split": "train",
+    "incoming_email": {
+      "from": "Olivia Johnson <olivia.johnson@stellarplatforms.com>",
+      "to": "Thomas Patel <thomas.patel@brightwavesolutions.com>",
+      "subject": "Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Thomas Patel,\n\nPeer review, manager feedback, or process improvement suggestions.\n\nPlease advise on the next steps.\n\nBest regards,\nOlivia Johnson"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Olivia Johnson,\n\nThank you for reaching out. I have noted your request regarding employee providing or requesting feedback on performance or processes and will follow up shortly with the relevant details.\n\nBest regards,\nThomas Patel"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "feedback",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_077",
+    "category": "hr_internal",
+    "scenario": "feedback",
+    "split": "train",
+    "incoming_email": {
+      "from": "Kenji Garcia <kenji.garcia@meridiangroup.com>",
+      "to": "Michael Lee <michael.lee@meridiangroup.com>",
+      "subject": "Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Michael Lee,\n\nPeer review, manager feedback, or process improvement suggestions.\n\nPlease advise on the next steps.\n\nBest regards,\nKenji Garcia"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Kenji Garcia,\n\nThank you for reaching out. I have noted your request regarding employee providing or requesting feedback on performance or processes and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Lee"
+    },
+    "metadata": {
+      "tone": "diplomatic",
+      "intent": "feedback",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_078",
+    "category": "hr_internal",
+    "scenario": "feedback",
+    "split": "train",
+    "incoming_email": {
+      "from": "Yuki Singh <yuki.singh@globalsynccorp.com>",
+      "to": "Yuki Mueller <yuki.mueller@pinnacleconsulting.com>",
+      "subject": "Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Yuki Mueller,\n\nPeer review, manager feedback, or process improvement suggestions.\n\nPlease advise on the next steps.\n\nBest regards,\nYuki Singh"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Yuki Singh,\n\nThank you for reaching out. I have noted your request regarding employee providing or requesting feedback on performance or processes and will follow up shortly with the relevant details.\n\nBest regards,\nYuki Mueller"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "feedback",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_079",
+    "category": "hr_internal",
+    "scenario": "feedback",
+    "split": "train",
+    "incoming_email": {
+      "from": "Carlos Lee <carlos.lee@meridiangroup.com>",
+      "to": "Olivia Santos <olivia.santos@globalsynccorp.com>",
+      "subject": "Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Olivia Santos,\n\nPeer review, manager feedback, or process improvement suggestions.\n\nPlease advise on the next steps.\n\nBest regards,\nCarlos Lee"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Carlos Lee,\n\nThank you for reaching out. I have noted your request regarding employee providing or requesting feedback on performance or processes and will follow up shortly with the relevant details.\n\nBest regards,\nOlivia Santos"
+    },
+    "metadata": {
+      "tone": "diplomatic",
+      "intent": "feedback",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_080",
+    "category": "hr_internal",
+    "scenario": "feedback",
+    "split": "train",
+    "incoming_email": {
+      "from": "Carlos Mueller <carlos.mueller@redwooddigital.com>",
+      "to": "Yuki Clark <yuki.clark@nexgensoftware.com>",
+      "subject": "Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Yuki Clark,\n\nPeer review, manager feedback, or process improvement suggestions.\n\nPlease advise on the next steps.\n\nBest regards,\nCarlos Mueller"
+    },
+    "expected_reply": {
+      "subject": "Re: Employee providing or requesting feedback on performance or processes",
+      "body": "Dear Carlos Mueller,\n\nThank you for reaching out. I have noted your request regarding employee providing or requesting feedback on performance or processes and will follow up shortly with the relevant details.\n\nBest regards,\nYuki Clark"
+    },
+    "metadata": {
+      "tone": "constructive",
+      "intent": "feedback",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_081",
+    "category": "sales_partnership",
+    "scenario": "cold_outreach_response",
+    "split": "train",
+    "incoming_email": {
+      "from": "Robert Santos <robert.santos@globalsynccorp.com>",
+      "to": "James Kim <james.kim@stellarplatforms.com>",
+      "subject": "Responding to a cold sales or partnership outreach email",
+      "body": "Dear James Kim,\n\nSomeone received an unsolicited business proposal and needs to reply.\n\nPlease advise on the next steps.\n\nBest regards,\nRobert Santos"
+    },
+    "expected_reply": {
+      "subject": "Re: Responding to a cold sales or partnership outreach email",
+      "body": "Dear Robert Santos,\n\nThank you for reaching out. I have noted your request regarding responding to a cold sales or partnership outreach email and will follow up shortly with the relevant details.\n\nBest regards,\nJames Kim"
+    },
+    "metadata": {
+      "tone": "noncommittal",
+      "intent": "cold outreach response",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_082",
+    "category": "sales_partnership",
+    "scenario": "cold_outreach_response",
+    "split": "train",
+    "incoming_email": {
+      "from": "Yuki Martinez <yuki.martinez@apexdynamics.com>",
+      "to": "Lisa Anderson <lisa.anderson@frontieranalytics.com>",
+      "subject": "Responding to a cold sales or partnership outreach email",
+      "body": "Dear Lisa Anderson,\n\nSomeone received an unsolicited business proposal and needs to reply.\n\nPlease advise on the next steps.\n\nBest regards,\nYuki Martinez"
+    },
+    "expected_reply": {
+      "subject": "Re: Responding to a cold sales or partnership outreach email",
+      "body": "Dear Yuki Martinez,\n\nThank you for reaching out. I have noted your request regarding responding to a cold sales or partnership outreach email and will follow up shortly with the relevant details.\n\nBest regards,\nLisa Anderson"
+    },
+    "metadata": {
+      "tone": "interested",
+      "intent": "cold outreach response",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_083",
+    "category": "sales_partnership",
+    "scenario": "cold_outreach_response",
+    "split": "train",
+    "incoming_email": {
+      "from": "Andre Garcia <andre.garcia@globalsynccorp.com>",
+      "to": "Sarah Wilson <sarah.wilson@apexdynamics.com>",
+      "subject": "Responding to a cold sales or partnership outreach email",
+      "body": "Dear Sarah Wilson,\n\nSomeone received an unsolicited business proposal and needs to reply.\n\nPlease advise on the next steps.\n\nBest regards,\nAndre Garcia"
+    },
+    "expected_reply": {
+      "subject": "Re: Responding to a cold sales or partnership outreach email",
+      "body": "Dear Andre Garcia,\n\nThank you for reaching out. I have noted your request regarding responding to a cold sales or partnership outreach email and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Wilson"
+    },
+    "metadata": {
+      "tone": "interested",
+      "intent": "cold outreach response",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_084",
+    "category": "sales_partnership",
+    "scenario": "cold_outreach_response",
+    "split": "train",
+    "incoming_email": {
+      "from": "James Ali <james.ali@horizonx.com>",
+      "to": "Thomas Martinez <thomas.martinez@upliftmedia.com>",
+      "subject": "Responding to a cold sales or partnership outreach email",
+      "body": "Dear Thomas Martinez,\n\nSomeone received an unsolicited business proposal and needs to reply.\n\nPlease advise on the next steps.\n\nBest regards,\nJames Ali"
+    },
+    "expected_reply": {
+      "subject": "Re: Responding to a cold sales or partnership outreach email",
+      "body": "Dear James Ali,\n\nThank you for reaching out. I have noted your request regarding responding to a cold sales or partnership outreach email and will follow up shortly with the relevant details.\n\nBest regards,\nThomas Martinez"
+    },
+    "metadata": {
+      "tone": "noncommittal",
+      "intent": "cold outreach response",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_085",
+    "category": "sales_partnership",
+    "scenario": "cold_outreach_response",
+    "split": "train",
+    "incoming_email": {
+      "from": "Olivia Smith <olivia.smith@horizonx.com>",
+      "to": "David Mueller <david.mueller@evergreensystems.com>",
+      "subject": "Responding to a cold sales or partnership outreach email",
+      "body": "Dear David Mueller,\n\nSomeone received an unsolicited business proposal and needs to reply.\n\nPlease advise on the next steps.\n\nBest regards,\nOlivia Smith"
+    },
+    "expected_reply": {
+      "subject": "Re: Responding to a cold sales or partnership outreach email",
+      "body": "Dear Olivia Smith,\n\nThank you for reaching out. I have noted your request regarding responding to a cold sales or partnership outreach email and will follow up shortly with the relevant details.\n\nBest regards,\nDavid Mueller"
+    },
+    "metadata": {
+      "tone": "noncommittal",
+      "intent": "cold outreach response",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "low"
+    }
+  },
+  {
+    "id": "email_086",
+    "category": "sales_partnership",
+    "scenario": "proposal_followup",
+    "split": "test",
+    "incoming_email": {
+      "from": "Lisa Kim <lisa.kim@cascadiatech.com>",
+      "to": "David Taylor <david.taylor@evergreensystems.com>",
+      "subject": "Following up on a previously sent business proposal",
+      "body": "Dear David Taylor,\n\nChecking in after sending a proposal to gauge interest or next steps.\n\nPlease advise on the next steps.\n\nBest regards,\nLisa Kim"
+    },
+    "expected_reply": {
+      "subject": "Re: Following up on a previously sent business proposal",
+      "body": "Dear Lisa Kim,\n\nThank you for reaching out. I have noted your request regarding following up on a previously sent business proposal and will follow up shortly with the relevant details.\n\nBest regards,\nDavid Taylor"
+    },
+    "metadata": {
+      "tone": "persistent",
+      "intent": "proposal followup",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_087",
+    "category": "sales_partnership",
+    "scenario": "proposal_followup",
+    "split": "train",
+    "incoming_email": {
+      "from": "Jennifer Thompson <jennifer.thompson@cascadiatech.com>",
+      "to": "Kenji Smith <kenji.smith@truenorthventures.com>",
+      "subject": "Following up on a previously sent business proposal",
+      "body": "Dear Kenji Smith,\n\nChecking in after sending a proposal to gauge interest or next steps.\n\nPlease advise on the next steps.\n\nBest regards,\nJennifer Thompson"
+    },
+    "expected_reply": {
+      "subject": "Re: Following up on a previously sent business proposal",
+      "body": "Dear Jennifer Thompson,\n\nThank you for reaching out. I have noted your request regarding following up on a previously sent business proposal and will follow up shortly with the relevant details.\n\nBest regards,\nKenji Smith"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "proposal followup",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_088",
+    "category": "sales_partnership",
+    "scenario": "proposal_followup",
+    "split": "test",
+    "incoming_email": {
+      "from": "Olivia Chen <olivia.chen@upliftmedia.com>",
+      "to": "Robert Johnson <robert.johnson@cascadiatech.com>",
+      "subject": "Following up on a previously sent business proposal",
+      "body": "Dear Robert Johnson,\n\nChecking in after sending a proposal to gauge interest or next steps.\n\nPlease advise on the next steps.\n\nBest regards,\nOlivia Chen"
+    },
+    "expected_reply": {
+      "subject": "Re: Following up on a previously sent business proposal",
+      "body": "Dear Olivia Chen,\n\nThank you for reaching out. I have noted your request regarding following up on a previously sent business proposal and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Johnson"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "proposal followup",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_089",
+    "category": "sales_partnership",
+    "scenario": "proposal_followup",
+    "split": "train",
+    "incoming_email": {
+      "from": "Maria Wilson <maria.wilson@frontieranalytics.com>",
+      "to": "Kenji Brown <kenji.brown@frontieranalytics.com>",
+      "subject": "Following up on a previously sent business proposal",
+      "body": "Dear Kenji Brown,\n\nChecking in after sending a proposal to gauge interest or next steps.\n\nPlease advise on the next steps.\n\nBest regards,\nMaria Wilson"
+    },
+    "expected_reply": {
+      "subject": "Re: Following up on a previously sent business proposal",
+      "body": "Dear Maria Wilson,\n\nThank you for reaching out. I have noted your request regarding following up on a previously sent business proposal and will follow up shortly with the relevant details.\n\nBest regards,\nKenji Brown"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "proposal followup",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_090",
+    "category": "sales_partnership",
+    "scenario": "proposal_followup",
+    "split": "train",
+    "incoming_email": {
+      "from": "Chen Mueller <chen.mueller@cascadiatech.com>",
+      "to": "Chen Ali <chen.ali@horizonx.com>",
+      "subject": "Following up on a previously sent business proposal",
+      "body": "Dear Chen Ali,\n\nChecking in after sending a proposal to gauge interest or next steps.\n\nPlease advise on the next steps.\n\nBest regards,\nChen Mueller"
+    },
+    "expected_reply": {
+      "subject": "Re: Following up on a previously sent business proposal",
+      "body": "Dear Chen Mueller,\n\nThank you for reaching out. I have noted your request regarding following up on a previously sent business proposal and will follow up shortly with the relevant details.\n\nBest regards,\nChen Ali"
+    },
+    "metadata": {
+      "tone": "professional",
+      "intent": "proposal followup",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_091",
+    "category": "sales_partnership",
+    "scenario": "pricing_negotiation",
+    "split": "train",
+    "incoming_email": {
+      "from": "Fatima Anderson <fatima.anderson@dataforgeinc.com>",
+      "to": "Maria Chen <maria.chen@dataforgeinc.com>",
+      "subject": "Negotiating pricing or terms for a deal",
+      "body": "Dear Maria Chen,\n\nBack-and-forth on pricing, discounts, or contract terms.\n\nPlease advise on the next steps.\n\nBest regards,\nFatima Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Negotiating pricing or terms for a deal",
+      "body": "Dear Fatima Anderson,\n\nThank you for reaching out. I have noted your request regarding negotiating pricing or terms for a deal and will follow up shortly with the relevant details.\n\nBest regards,\nMaria Chen"
+    },
+    "metadata": {
+      "tone": "diplomatic",
+      "intent": "pricing negotiation",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_092",
+    "category": "sales_partnership",
+    "scenario": "pricing_negotiation",
+    "split": "train",
+    "incoming_email": {
+      "from": "Yuki Brown <yuki.brown@truenorthventures.com>",
+      "to": "Michael Johnson <michael.johnson@globalsynccorp.com>",
+      "subject": "Negotiating pricing or terms for a deal",
+      "body": "Dear Michael Johnson,\n\nBack-and-forth on pricing, discounts, or contract terms.\n\nPlease advise on the next steps.\n\nBest regards,\nYuki Brown"
+    },
+    "expected_reply": {
+      "subject": "Re: Negotiating pricing or terms for a deal",
+      "body": "Dear Yuki Brown,\n\nThank you for reaching out. I have noted your request regarding negotiating pricing or terms for a deal and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Johnson"
+    },
+    "metadata": {
+      "tone": "firm",
+      "intent": "pricing negotiation",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_093",
+    "category": "sales_partnership",
+    "scenario": "pricing_negotiation",
+    "split": "train",
+    "incoming_email": {
+      "from": "David Ali <david.ali@nexgensoftware.com>",
+      "to": "Kenji Patel <kenji.patel@meridiangroup.com>",
+      "subject": "Negotiating pricing or terms for a deal",
+      "body": "Dear Kenji Patel,\n\nBack-and-forth on pricing, discounts, or contract terms.\n\nPlease advise on the next steps.\n\nBest regards,\nDavid Ali"
+    },
+    "expected_reply": {
+      "subject": "Re: Negotiating pricing or terms for a deal",
+      "body": "Dear David Ali,\n\nThank you for reaching out. I have noted your request regarding negotiating pricing or terms for a deal and will follow up shortly with the relevant details.\n\nBest regards,\nKenji Patel"
+    },
+    "metadata": {
+      "tone": "diplomatic",
+      "intent": "pricing negotiation",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_094",
+    "category": "sales_partnership",
+    "scenario": "pricing_negotiation",
+    "split": "train",
+    "incoming_email": {
+      "from": "Priya Martinez <priya.martinez@luminarai.com>",
+      "to": "Priya Lee <priya.lee@frontieranalytics.com>",
+      "subject": "Negotiating pricing or terms for a deal",
+      "body": "Dear Priya Lee,\n\nBack-and-forth on pricing, discounts, or contract terms.\n\nPlease advise on the next steps.\n\nBest regards,\nPriya Martinez"
+    },
+    "expected_reply": {
+      "subject": "Re: Negotiating pricing or terms for a deal",
+      "body": "Dear Priya Martinez,\n\nThank you for reaching out. I have noted your request regarding negotiating pricing or terms for a deal and will follow up shortly with the relevant details.\n\nBest regards,\nPriya Lee"
+    },
+    "metadata": {
+      "tone": "firm",
+      "intent": "pricing negotiation",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_095",
+    "category": "sales_partnership",
+    "scenario": "pricing_negotiation",
+    "split": "test",
+    "incoming_email": {
+      "from": "Michael Thompson <michael.thompson@evergreensystems.com>",
+      "to": "Michael Kim <michael.kim@luminarai.com>",
+      "subject": "Negotiating pricing or terms for a deal",
+      "body": "Dear Michael Kim,\n\nBack-and-forth on pricing, discounts, or contract terms.\n\nPlease advise on the next steps.\n\nBest regards,\nMichael Thompson"
+    },
+    "expected_reply": {
+      "subject": "Re: Negotiating pricing or terms for a deal",
+      "body": "Dear Michael Thompson,\n\nThank you for reaching out. I have noted your request regarding negotiating pricing or terms for a deal and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Kim"
+    },
+    "metadata": {
+      "tone": "diplomatic",
+      "intent": "pricing negotiation",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_096",
+    "category": "sales_partnership",
+    "scenario": "contract_question",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Kim <rachel.kim@horizonx.com>",
+      "to": "Thomas Singh <thomas.singh@stellarplatforms.com>",
+      "subject": "Asking about contract terms, renewals, or amendments",
+      "body": "Dear Thomas Singh,\n\nClarifying legal language, renewal dates, or modification requests.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Kim"
+    },
+    "expected_reply": {
+      "subject": "Re: Asking about contract terms, renewals, or amendments",
+      "body": "Dear Rachel Kim,\n\nThank you for reaching out. I have noted your request regarding asking about contract terms, renewals, or amendments and will follow up shortly with the relevant details.\n\nBest regards,\nThomas Singh"
+    },
+    "metadata": {
+      "tone": "direct",
+      "intent": "contract question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_097",
+    "category": "sales_partnership",
+    "scenario": "contract_question",
+    "split": "train",
+    "incoming_email": {
+      "from": "Rachel Kim <rachel.kim@upliftmedia.com>",
+      "to": "James Mueller <james.mueller@innovault.com>",
+      "subject": "Asking about contract terms, renewals, or amendments",
+      "body": "Dear James Mueller,\n\nClarifying legal language, renewal dates, or modification requests.\n\nPlease advise on the next steps.\n\nBest regards,\nRachel Kim"
+    },
+    "expected_reply": {
+      "subject": "Re: Asking about contract terms, renewals, or amendments",
+      "body": "Dear Rachel Kim,\n\nThank you for reaching out. I have noted your request regarding asking about contract terms, renewals, or amendments and will follow up shortly with the relevant details.\n\nBest regards,\nJames Mueller"
+    },
+    "metadata": {
+      "tone": "cautious",
+      "intent": "contract question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  },
+  {
+    "id": "email_098",
+    "category": "sales_partnership",
+    "scenario": "contract_question",
+    "split": "train",
+    "incoming_email": {
+      "from": "Maria Garcia <maria.garcia@truenorthventures.com>",
+      "to": "Olivia Chen <olivia.chen@orbitlabs.com>",
+      "subject": "Asking about contract terms, renewals, or amendments",
+      "body": "Dear Olivia Chen,\n\nClarifying legal language, renewal dates, or modification requests.\n\nPlease advise on the next steps.\n\nBest regards,\nMaria Garcia"
+    },
+    "expected_reply": {
+      "subject": "Re: Asking about contract terms, renewals, or amendments",
+      "body": "Dear Maria Garcia,\n\nThank you for reaching out. I have noted your request regarding asking about contract terms, renewals, or amendments and will follow up shortly with the relevant details.\n\nBest regards,\nOlivia Chen"
+    },
+    "metadata": {
+      "tone": "formal",
+      "intent": "contract question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_099",
+    "category": "sales_partnership",
+    "scenario": "contract_question",
+    "split": "train",
+    "incoming_email": {
+      "from": "David Anderson <david.anderson@evergreensystems.com>",
+      "to": "Olivia Lee <olivia.lee@keystonepartners.com>",
+      "subject": "Asking about contract terms, renewals, or amendments",
+      "body": "Dear Olivia Lee,\n\nClarifying legal language, renewal dates, or modification requests.\n\nPlease advise on the next steps.\n\nBest regards,\nDavid Anderson"
+    },
+    "expected_reply": {
+      "subject": "Re: Asking about contract terms, renewals, or amendments",
+      "body": "Dear David Anderson,\n\nThank you for reaching out. I have noted your request regarding asking about contract terms, renewals, or amendments and will follow up shortly with the relevant details.\n\nBest regards,\nOlivia Lee"
+    },
+    "metadata": {
+      "tone": "cautious",
+      "intent": "contract question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "high"
+    }
+  },
+  {
+    "id": "email_100",
+    "category": "sales_partnership",
+    "scenario": "contract_question",
+    "split": "test",
+    "incoming_email": {
+      "from": "Chen Brown <chen.brown@frontieranalytics.com>",
+      "to": "Chen Chen <chen.chen@horizonx.com>",
+      "subject": "Asking about contract terms, renewals, or amendments",
+      "body": "Dear Chen Chen,\n\nClarifying legal language, renewal dates, or modification requests.\n\nPlease advise on the next steps.\n\nBest regards,\nChen Brown"
+    },
+    "expected_reply": {
+      "subject": "Re: Asking about contract terms, renewals, or amendments",
+      "body": "Dear Chen Brown,\n\nThank you for reaching out. I have noted your request regarding asking about contract terms, renewals, or amendments and will follow up shortly with the relevant details.\n\nBest regards,\nChen Chen"
+    },
+    "metadata": {
+      "tone": "cautious",
+      "intent": "contract question",
+      "key_actions": [
+        "acknowledge",
+        "follow up"
+      ],
+      "complexity": "medium"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+# Environment
+.env
+
+# ChromaDB vector store (rebuilt on first run)
+.chroma_db/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports (generated at runtime)
+*.log
+results.json
+results.md
