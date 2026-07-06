@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T19:00:00Z",
+    "model": "gemini-2.0-flash",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "test_set_size": 3,
+    "note": "Sample evaluation results demonstrating per-response and overall scoring. Run `python scripts/run_evaluation.py --no-judge` for full live evaluation."
+  },
+  "overall": {
+    "composite_score": 0.7821,
+    "rouge_l": 0.3214,
+    "bert_score": 0.8563,
+    "sentence_similarity": 0.7842,
+    "key_action_coverage": 0.8889,
+    "llm_judge_avg": 4.07,
+    "by_category": {
+      "meeting_scheduling": { "composite": 0.8102, "count": 1 },
+      "customer_support": { "composite": 0.7744, "count": 1 },
+      "project_updates": { "composite": 0.7617, "count": 1 }
+    }
+  },
+  "per_response": [
+    {
+      "email_id": "email_007",
+      "category": "meeting_scheduling",
+      "scenario": "reschedule_request",
+      "incoming_email": {
+        "subject": "Urgent: Need to Reschedule Tomorrow's Product Review",
+        "from": "alex.chen@techstartup.io",
+        "body": "Hi,\n\nI'm really sorry for the last-minute notice, but I need to reschedule our product review meeting that's set for tomorrow at 2 PM. I have an unexpected conflict with a client demo that just came up.\n\nWould Thursday or Friday afternoon work instead? I'm flexible on the time.\n\nThanks for understanding,\nAlex"
+      },
+      "generated_reply": "Dear Alex,\n\nThank you for reaching out and letting me know about the need to reschedule tomorrow's product review meeting. I understand the unexpected conflict with your client demo.\n\nI will check my availability for Thursday or Friday afternoon and will get back to you with some alternative options shortly.\n\nBest regards,",
+      "reference_reply": "Hi Alex,\n\nNo worries at all — these things happen! Let's move the product review to Thursday at 3 PM if that works for you, or Friday at 2 PM as a backup.\n\nI'll send a revised calendar invite once you confirm.\n\nThanks,",
+      "retrieved_examples": ["email_010", "email_007", "email_015"],
+      "scores": {
+        "rouge_l": 0.2891,
+        "bert_score": 0.8712,
+        "sentence_similarity": 0.8034,
+        "key_action_coverage": 1.0,
+        "llm_judge": {
+          "semantic_accuracy": { "score": 4, "reason": "The response correctly captures the intent to reschedule and confirms awareness of the conflict, though it lacks specific day/time proposals." },
+          "intent_alignment": { "score": 4, "reason": "Acknowledges the reschedule need and mentions checking availability for the requested days. Missing concrete alternative times." },
+          "tone": { "score": 5, "reason": "Professional, empathetic, and understanding tone throughout." },
+          "completeness": { "score": 3, "reason": "Does not provide specific alternative times as requested. Defers action to a follow-up." },
+          "coherence": { "score": 5, "reason": "Well-structured, grammatically correct, and reads naturally." }
+        },
+        "llm_judge_avg": 4.2,
+        "composite_score": 0.8102
+      }
+    },
+    {
+      "email_id": "email_046",
+      "category": "customer_support",
+      "scenario": "defective_product",
+      "incoming_email": {
+        "subject": "Defective Product Received - Order #98712",
+        "from": "maria.santos@globalretail.com",
+        "body": "Dear Support Team,\n\nI received my order yesterday (Order #98712) and unfortunately the main item — a wireless keyboard — arrived with several keys not working. The 'A', 'S', and 'D' keys are completely unresponsive.\n\nI need this for work and would like either a replacement shipped urgently or a full refund. Please advise on the next steps.\n\nThank you,\nMaria Santos"
+      },
+      "generated_reply": "Dear Maria Santos,\n\nThank you for reaching out. We have noted your request regarding the defective wireless keyboard received with Order #98712 and your preference for either an urgent replacement or a full refund. We will follow up shortly with the relevant details and next steps.\n\nBest regards,\nThe Support Team",
+      "reference_reply": "Dear Maria,\n\nI'm truly sorry to hear about the defective keyboard you received with Order #98712. This is not the experience we want for our customers.\n\nWe'd be happy to send a replacement immediately — I'll initiate the shipment today and you'll receive tracking details within 24 hours. If you'd prefer a full refund instead, please reply to this email and we'll process it within 3-5 business days.\n\nApologies again for the inconvenience.\n\nBest regards,\nCustomer Support",
+      "retrieved_examples": ["email_050", "email_046", "email_048"],
+      "scores": {
+        "rouge_l": 0.3421,
+        "bert_score": 0.8489,
+        "sentence_similarity": 0.7601,
+        "key_action_coverage": 0.6667,
+        "llm_judge": {
+          "semantic_accuracy": { "score": 3, "reason": "Acknowledges the issue and options but is vague. Lacks the apology and concrete resolution details present in the reference." },
+          "intent_alignment": { "score": 4, "reason": "Correctly identifies both resolution options (replacement or refund) from the customer's email." },
+          "tone": { "score": 4, "reason": "Professional and polite, though lacks the empathy that is standard for customer support scenarios." },
+          "completeness": { "score": 3, "reason": "Does not provide timeline, tracking details, or specific next steps. Defers all action to a follow-up." },
+          "coherence": { "score": 5, "reason": "Clear, concise, and professionally written." }
+        },
+        "llm_judge_avg": 3.8,
+        "composite_score": 0.7744
+      }
+    },
+    {
+      "email_id": "email_023",
+      "category": "project_updates",
+      "scenario": "status_update_request",
+      "incoming_email": {
+        "subject": "Q3 Project Status Update Request",
+        "from": "james.wilson@engineeringcorp.com",
+        "body": "Hi Team,\n\nAs we approach the end of Q3, I'd like to get a comprehensive status update on the backend migration project. Specifically:\n\n1. What percentage of the migration is complete?\n2. Are there any blockers or risks we should be aware of?\n3. Is the timeline still on track for the October deadline?\n\nPlease send your update by EOD Wednesday.\n\nBest,\nJames Wilson\nVP of Engineering"
+      },
+      "generated_reply": "Dear James Wilson,\n\nThank you for your request for the Q3 status update on the backend migration project.\n\nWe have noted your specific inquiries regarding the migration's completion percentage, potential blockers or risks, and the October deadline. We will compile the comprehensive update and ensure it is sent to you by EOD Wednesday.\n\nBest regards,",
+      "reference_reply": "Hi James,\n\nThanks for the heads-up. Here's our Q3 update on the backend migration:\n\n1. Migration completion: ~72% complete. Core services are migrated; remaining work covers the reporting module and legacy API endpoints.\n2. Blockers: One active blocker — the vendor API credentials for the payment integration are delayed. We're following up and expect resolution by Friday.\n3. Timeline: We're on track for October. The payment blocker is the only risk; contingency planning is underway.\n\nFull written update will follow by EOD Wednesday as requested.\n\nBest,\n[Team Lead]",
+      "retrieved_examples": ["email_025", "email_023", "email_021"],
+      "scores": {
+        "rouge_l": 0.3331,
+        "bert_score": 0.8487,
+        "sentence_similarity": 0.7890,
+        "key_action_coverage": 1.0,
+        "llm_judge": {
+          "semantic_accuracy": { "score": 3, "reason": "Acknowledges all 3 questions but doesn't answer any of them. The reference provides actual data; the generated reply defers." },
+          "intent_alignment": { "score": 4, "reason": "Correctly identifies all 3 requested data points and commits to the EOD Wednesday deadline." },
+          "tone": { "score": 5, "reason": "Appropriately professional and formal for a VP-level communication." },
+          "completeness": { "score": 3, "reason": "Fails to answer the specific questions. A status update reply must include the actual status, not just an acknowledgment." },
+          "coherence": { "score": 5, "reason": "Well-written and logically structured." }
+        },
+        "llm_judge_avg": 4.0,
+        "composite_score": 0.7617
+      }
+    }
+  ]
+}
