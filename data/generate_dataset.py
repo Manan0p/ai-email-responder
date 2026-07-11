@@ -23,7 +23,10 @@ try:
 except ImportError:
     load_dotenv = None
 
-from google import genai
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src.config import config
+from groq import Groq
 
 # ---------------------------------------------------------------------------
 # Scenario templates: 5 categories x 4 scenarios each = 20 templates
@@ -257,7 +260,7 @@ Return ONLY a valid JSON object with this exact structure (no markdown, no code 
 
 
 def generate_variation(
-    client: genai.Client,
+    client: Groq,
     category: str,
     scenario: str,
     template: dict,
@@ -271,16 +274,14 @@ def generate_variation(
 
     for attempt in range(max_retries):
         try:
-            response = client.models.generate_content(
-                model="gemini-3.0-flash",
-                contents=prompt,
-                config=genai.types.GenerateContentConfig(
-                    temperature=0.8,
-                    response_mime_type="application/json",
-                ),
+            response = client.chat.completions.create(
+                model=config.generation_model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.8,
+                response_format={"type": "json_object"},
             )
 
-            raw_text = response.text.strip()
+            raw_text = response.choices[0].message.content.strip()
             # Remove potential markdown fences if the model wraps them anyway
             if raw_text.startswith("```"):
                 raw_text = raw_text.split("\n", 1)[1]
@@ -472,6 +473,16 @@ def validate_dataset(dataset: list[dict]) -> list[str]:
         else:
             errors.append(f"{prefix}: metadata is not a dict.")
 
+        # Content quality check to catch fallback stubs
+        if "incoming_email" in entry and isinstance(entry["incoming_email"], dict):
+            body = entry["incoming_email"].get("body", "")
+            cat = entry.get("category", "")
+            scen = entry.get("scenario", "")
+            if cat in SCENARIO_TEMPLATES and scen in SCENARIO_TEMPLATES[cat]:
+                template = SCENARIO_TEMPLATES[cat][scen]
+                if template["sample_context"] in body:
+                    errors.append(f"{prefix}: Body contains exact fallback template text. Generation likely failed.")
+
     return errors
 
 
@@ -480,9 +491,21 @@ def validate_dataset(dataset: list[dict]) -> list[str]:
 # ---------------------------------------------------------------------------
 
 
-def generate_dataset(api_key: str) -> list[dict]:
-    """Generate the full 100-entry dataset using Gemini."""
-    client = genai.Client(api_key=api_key)
+def generate_dataset(api_key: str, resume_path: str = None) -> list[dict]:
+    """Generate the full 100-entry dataset using Groq."""
+    client = Groq(api_key=api_key)
+
+    existing_valid_entries = {}
+    if resume_path and os.path.exists(resume_path):
+        with open(resume_path, "r", encoding="utf-8") as f:
+            try:
+                old_data = json.load(f)
+                for entry in old_data:
+                    # If this specific entry passes validation (no errors), save it
+                    if not validate_dataset([entry]):
+                        existing_valid_entries[entry["id"]] = entry
+            except json.JSONDecodeError:
+                print(f"Could not read {resume_path} for resuming.")
 
     splits = assign_splits()
     dataset = []
@@ -504,20 +527,24 @@ def generate_dataset(api_key: str) -> list[dict]:
 
                 print(f"  ({entry_number}/{total}) {entry_id} | {scenario} v{variation + 1} [{split}] ... ", end="", flush=True)
 
-                entry = generate_variation(
-                    client=client,
-                    category=category,
-                    scenario=scenario,
-                    template=template,
-                    variation_index=variation,
-                    entry_id=entry_id,
-                    split=split,
-                )
-                dataset.append(entry)
-                print("done")
+                if entry_id in existing_valid_entries:
+                    print("skipped (already valid)")
+                    dataset.append(existing_valid_entries[entry_id])
+                else:
+                    entry = generate_variation(
+                        client=client,
+                        category=category,
+                        scenario=scenario,
+                        template=template,
+                        variation_index=variation,
+                        entry_id=entry_id,
+                        split=split,
+                    )
+                    dataset.append(entry)
+                    print("done")
 
-                # Brief pause to avoid rate-limiting
-                time.sleep(0.3)
+                    # Brief pause to avoid rate-limiting
+                    time.sleep(0.3)
 
         print()
 
@@ -538,6 +565,11 @@ def main():
         "--validate",
         action="store_true",
         help="Run schema validation on an existing dataset file instead of generating.",
+    )
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Resume generation from the output file, skipping already valid entries.",
     )
     args = parser.parse_args()
 
@@ -578,14 +610,15 @@ def main():
     if load_dotenv is not None:
         load_dotenv()
 
-    api_key = os.environ.get("GOOGLE_API_KEY")
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        print("ERROR: GOOGLE_API_KEY not found.")
+        print("ERROR: GROQ_API_KEY not found.")
         print("Set it as an environment variable or add it to a .env file.")
         sys.exit(1)
 
     # Generate
-    dataset = generate_dataset(api_key)
+    resume_path = args.output if args.resume else None
+    dataset = generate_dataset(api_key, resume_path=resume_path)
 
     # Validate before saving
     print("Running validation on generated dataset...")

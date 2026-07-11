@@ -1,0 +1,866 @@
+{
+  "overall_composite": 0.9245,
+  "num_evaluated": 20,
+  "avg_automated_scores": {
+    "rouge_l": 0.9993,
+    "bert_score": 0.9978,
+    "sentence_similarity": 0.9998,
+    "key_action_coverage": 0.5
+  },
+  "avg_judge_scores": {
+    "semantic_accuracy": 5.0,
+    "intent_alignment": 5.0,
+    "tone": 5.0,
+    "completeness": 5.0,
+    "coherence": 5.0
+  },
+  "by_category": {
+    "meeting_scheduling": 0.925,
+    "project_updates": 0.925,
+    "customer_support": 0.925,
+    "hr_internal": 0.9223,
+    "sales_partnership": 0.925
+  },
+  "per_response": [
+    {
+      "email_id": "email_008",
+      "category": "meeting_scheduling",
+      "scenario": "reschedule_request",
+      "generated_reply": "Dear Andre Garcia,\n\nThank you for reaching out. I have noted your request regarding someone asking to reschedule an existing meeting and will follow up shortly with the relevant details.\n\nBest regards,\nAhmed Williams",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, noting the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goal of acknowledging the request to reschedule and following up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional and appropriate for the context, matching the polite and formal tone of the reference."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses the point raised in the incoming email about rescheduling a meeting and the need for follow-up."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, mirroring the quality of the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_010",
+        "email_007",
+        "email_006"
+      ]
+    },
+    {
+      "email_id": "email_009",
+      "category": "meeting_scheduling",
+      "scenario": "reschedule_request",
+      "generated_reply": "Dear Michael Ali,\n\nThank you for reaching out. I have noted your request regarding someone asking to reschedule an existing meeting and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Ali",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the request and follow up shortly."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, which is the request to reschedule a meeting and the expectation of follow-up details."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_010",
+        "email_007",
+        "email_006"
+      ]
+    },
+    {
+      "email_id": "email_016",
+      "category": "meeting_scheduling",
+      "scenario": "confirm_meeting",
+      "generated_reply": "Dear Fatima Clark,\n\nThank you for reaching out. I have noted your request regarding someone confirming attendance or details for a meeting and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Garcia",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to confirm receipt of the request and assure follow-up."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the context, mirroring the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for confirmation and next steps."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_019",
+        "email_017",
+        "email_018"
+      ]
+    },
+    {
+      "email_id": "email_020",
+      "category": "meeting_scheduling",
+      "scenario": "confirm_meeting",
+      "generated_reply": "Dear Lisa Chen,\n\nThank you for reaching out. I have noted your request regarding someone confirming attendance or details for a meeting and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Smith",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to confirm receipt of the request and assure follow-up."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the context, mirroring the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for confirmation and next steps."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_018",
+        "email_017",
+        "email_019"
+      ]
+    },
+    {
+      "email_id": "email_028",
+      "category": "project_updates",
+      "scenario": "deadline_extension",
+      "generated_reply": "Dear Priya Brown,\n\nThank you for reaching out. I have noted your request regarding team member requesting an extension on a project deadline and will follow up shortly with the relevant details.\n\nBest regards,\nRachel Santos",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, noting the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the request and provide a follow-up."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, specifically the request for an extension on a project deadline."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_026",
+        "email_027",
+        "email_029"
+      ]
+    },
+    {
+      "email_id": "email_030",
+      "category": "project_updates",
+      "scenario": "deadline_extension",
+      "generated_reply": "Dear Priya Lee,\n\nThank you for reaching out. I have noted your request regarding team member requesting an extension on a project deadline and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Ali",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the request for an extension and follow up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, specifically the request for an extension and the need for next steps."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_027",
+        "email_026",
+        "email_029"
+      ]
+    },
+    {
+      "email_id": "email_037",
+      "category": "project_updates",
+      "scenario": "milestone_completion",
+      "generated_reply": "Dear Fatima Ali,\n\nThank you for reaching out. I have noted your request regarding team member announcing completion of a project milestone and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Singh",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the completion of a project milestone and provide next steps."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for next steps after completing a project milestone."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the human-written reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_038",
+        "email_039",
+        "email_036"
+      ]
+    },
+    {
+      "email_id": "email_040",
+      "category": "project_updates",
+      "scenario": "milestone_completion",
+      "generated_reply": "Dear Andre Ali,\n\nThank you for reaching out. I have noted your request regarding team member announcing completion of a project milestone and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Anderson",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the completion of a project milestone and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the milestone completion and provide next steps."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for next steps."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_038",
+        "email_039",
+        "email_036"
+      ]
+    },
+    {
+      "email_id": "email_045",
+      "category": "customer_support",
+      "scenario": "complaint",
+      "generated_reply": "Dear Emily Johnson,\n\nThank you for reaching out. I have noted your request regarding customer filing a complaint about a product or service and will follow up shortly with the relevant details.\n\nBest regards,\nJennifer Kim",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, noting the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the complaint and follow up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, which is to advise on the next steps regarding the customer's complaint."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_042",
+        "email_041",
+        "email_043"
+      ]
+    },
+    {
+      "email_id": "email_047",
+      "category": "customer_support",
+      "scenario": "refund_request",
+      "generated_reply": "Dear Maria Anderson,\n\nThank you for reaching out. I have noted your request regarding customer requesting a refund for a purchase and will follow up shortly with the relevant details.\n\nBest regards,\nThomas Martinez",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference reply, including noting the request and following up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including acknowledging the request and promising follow-up."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_046",
+        "email_050",
+        "email_048"
+      ]
+    },
+    {
+      "email_id": "email_049",
+      "category": "customer_support",
+      "scenario": "refund_request",
+      "generated_reply": "Dear Fatima Ali,\n\nThank you for reaching out. I have noted your request regarding customer requesting a refund for a purchase and will follow up shortly with the relevant details.\n\nBest regards,\nSarah Thompson",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference reply, including noting the request and following up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for advice on the next steps for a customer refund."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, with no issues in readability or quality."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_050",
+        "email_046",
+        "email_048"
+      ]
+    },
+    {
+      "email_id": "email_051",
+      "category": "customer_support",
+      "scenario": "product_inquiry",
+      "generated_reply": "Dear Andre Wilson,\n\nThank you for reaching out. I have noted your request regarding customer asking about product features, availability, or compatibility and will follow up shortly with the relevant details.\n\nBest regards,\nRachel Patel",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including following up with relevant details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for information and the next steps."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, matching the quality of the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_052",
+        "email_055",
+        "email_053"
+      ]
+    },
+    {
+      "email_id": "email_061",
+      "category": "hr_internal",
+      "scenario": "pto_request",
+      "generated_reply": "Dear Priya Taylor,\n\nThank you for reaching out. I have noted your request regarding employee requesting paid time off and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Clark",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference reply, including noting the request and following up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for guidance on the next steps for an employee's paid time off."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, with no issues in readability or quality of writing."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_064",
+        "email_065",
+        "email_062"
+      ]
+    },
+    {
+      "email_id": "email_066",
+      "category": "hr_internal",
+      "scenario": "onboarding_question",
+      "generated_reply": "Dear Emily Patel,\n\nThank you for reaching out. I have noted your request regarding new hire asking about onboarding processes or resources and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Thompson",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, noting the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the request and follow up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, which is the request for onboarding processes or resources for a new hire."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, identical in quality to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_070",
+        "email_068",
+        "email_067"
+      ]
+    },
+    {
+      "email_id": "email_069",
+      "category": "hr_internal",
+      "scenario": "onboarding_question",
+      "generated_reply": "Dear Robert Patel,\n\nThank you for reaching out. I have noted your request regarding new hire asking about onboarding processes or resources and will follow up shortly with the relevant details.\n\nBest regards,\nEmily Williams",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, noting the request and promising follow-up."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goal of providing onboarding information as the reference."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional and appropriate for the email context, matching the reference's polite and helpful tone."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses the point raised in the incoming email about needing help with onboarding processes or resources."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, mirroring the quality of the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_068",
+        "email_070",
+        "email_067"
+      ]
+    },
+    {
+      "email_id": "email_071",
+      "category": "hr_internal",
+      "scenario": "policy_clarification",
+      "generated_reply": "Dear Lisa Smith,\n\nThank you for reaching out. I have noted your request regarding an employee asking for clarification on a company policy and will follow up shortly with the relevant details.\n\nBest regards,\nCarlos Mueller",
+      "scores": {
+        "rouge_l": 0.9859,
+        "bert_score": 0.9564,
+        "sentence_similarity": 0.9966,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.9144,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference reply, including noting the request and following up with details."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for clarification on company policy."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, with no noticeable issues in writing quality."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_074",
+        "email_073",
+        "email_075"
+      ]
+    },
+    {
+      "email_id": "email_086",
+      "category": "sales_partnership",
+      "scenario": "proposal_followup",
+      "generated_reply": "Dear Lisa Kim,\n\nThank you for reaching out. I have noted your request regarding following up on a previously sent business proposal and will follow up shortly with the relevant details.\n\nBest regards,\nDavid Taylor",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the follow-up and promising to provide relevant details."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the follow-up and provide a response regarding the proposal."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for a business email, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for next steps and the proposal follow-up."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, indicating excellent writing quality similar to the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_089",
+        "email_087",
+        "email_090"
+      ]
+    },
+    {
+      "email_id": "email_088",
+      "category": "sales_partnership",
+      "scenario": "proposal_followup",
+      "generated_reply": "Dear Olivia Chen,\n\nThank you for reaching out. I have noted your request regarding following up on a previously sent business proposal and will follow up shortly with the relevant details.\n\nBest regards,\nRobert Johnson",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the follow-up and promising to provide relevant details."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, which is to acknowledge the follow-up and provide next steps."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for a business email, matching the tone of the reference."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for next steps and the acknowledgment of the proposal follow-up."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, with no issues in readability or writing quality."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_089",
+        "email_087",
+        "email_090"
+      ]
+    },
+    {
+      "email_id": "email_095",
+      "category": "sales_partnership",
+      "scenario": "pricing_negotiation",
+      "generated_reply": "Dear Michael Thompson,\n\nThank you for reaching out. I have noted your request regarding negotiating pricing or terms for a deal and will follow up shortly with the relevant details.\n\nBest regards,\nMichael Kim",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference reply, including following up on the request."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for next steps."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, matching the quality of the reference reply."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_092",
+        "email_094",
+        "email_093"
+      ]
+    },
+    {
+      "email_id": "email_100",
+      "category": "sales_partnership",
+      "scenario": "contract_question",
+      "generated_reply": "Dear Chen Brown,\n\nThank you for reaching out. I have noted your request regarding asking about contract terms, renewals, or amendments and will follow up shortly with the relevant details.\n\nBest regards,\nChen Chen",
+      "scores": {
+        "rouge_l": 1.0,
+        "bert_score": 1.0,
+        "sentence_similarity": 1.0,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference reply."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference reply, including noting the request and promising follow-up."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional and appropriate for the email context, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for information on contract terms."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, with no noticeable issues in writing quality."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_098",
+        "email_099",
+        "email_096"
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import re
 import time
 from typing import Dict, Any
 from dataclasses import dataclass
-from google import genai
+from groq import Groq
 from src.config import config
 
 MAX_RETRIES = 5
@@ -107,7 +107,7 @@ class JudgeScore:
 class LLMJudge:
     def __init__(self):
         config.validate()
-        self.client = genai.Client(api_key=config.google_api_key)
+        self.client = Groq(api_key=config.groq_api_key)
 
     def evaluate(
         self,
@@ -127,17 +127,16 @@ class LLMJudge:
 
         last_exc = None
         for attempt in range(MAX_RETRIES):
+            time.sleep(2.1)  # Groq rate limit buffer
             try:
-                response = self.client.models.generate_content(
+                response = self.client.chat.completions.create(
                     model=config.judge_model,
-                    contents=prompt,
-                    config=genai.types.GenerateContentConfig(
-                        temperature=0.1,
-                        response_mime_type="application/json",
-                    ),
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=0.1,
+                    response_format={"type": "json_object"},
                 )
 
-                text = response.text.strip()
+                text = response.choices[0].message.content.strip()
                 data = json.loads(text)
 
                 return JudgeScore(
@@ -149,7 +148,7 @@ class LLMJudge:
                 )
             except Exception as exc:
                 last_exc = exc
-                if "429" in str(exc) or "RESOURCE_EXHAUSTED" in str(exc):
+                if "429" in str(exc) or "rate limit" in str(exc).lower():
                     delay = _retry_delay_from_error(exc) or BASE_DELAY * (2 ** attempt)
                     print(f"  [Rate limited] Judge retrying in {delay:.0f}s (attempt {attempt + 1}/{MAX_RETRIES})...")
                     time.sleep(delay)

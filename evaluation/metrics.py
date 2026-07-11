@@ -63,33 +63,17 @@ class AutomatedMetrics:
 
         action_keywords = {
             "apologize": ["sorry", "apologize", "apolog", "regret"],
-            "offer_refund_or_replacement": ["refund", "replacement", "replace", "reimburse", "credit", "return"],
-            "provide_timeline": ["business day", "within", "timeframe", "timeline", "hours", "days", "week"],
-            "confirm_meeting": ["confirm", "confirmed", "see you", "looking forward", "scheduled"],
-            "suggest_alternatives": ["alternative", "instead", "another option", "other time", "reschedule to"],
-            "acknowledge_issue": ["understand", "acknowledge", "noted", "aware", "hear you"],
-            "escalate": ["escalate", "manager", "supervisor", "senior", "team lead"],
-            "provide_update": ["update", "progress", "status", "current state", "completed"],
-            "request_information": ["could you", "please provide", "need", "require", "send us"],
-            "set_deadline": ["deadline", "due date", "by end of", "target date", "complete by"],
-            "express_gratitude": ["thank", "appreciate", "grateful"],
-            "offer_help": ["help", "assist", "support", "happy to", "glad to", "let me know"],
-            "provide_details": ["details", "information", "specifics", "attached", "below"],
-            "approve_request": ["approved", "granted", "go ahead", "accepted", "permission"],
-            "deny_request": ["unable", "cannot", "unfortunately", "decline", "not possible"],
-            "follow_up": ["follow up", "check in", "circle back", "touch base", "get back"],
-            "share_feedback": ["feedback", "thoughts", "opinion", "review", "input"],
-            "welcome": ["welcome", "glad to have", "excited", "onboard"],
-            "clarify_policy": ["policy", "guideline", "procedure", "process", "according to"],
-            "negotiate": ["negotiate", "discuss terms", "proposal", "counter", "offer", "consider"],
-            "schedule_call": ["call", "meeting", "discuss", "chat", "connect", "schedule"],
-            "send_proposal": ["proposal", "quote", "pricing", "estimate", "package"],
             "address_concerns": ["concern", "worry", "issue", "understand your", "address"],
         }
 
+        stopwords = {"the", "a", "an", "and", "or", "to", "for", "of", "in", "on", "with", "new"}
+
         for action in key_actions:
             action_lower = action.lower()
-            keywords = action_keywords.get(action_lower, [action_lower.replace("_", " ")])
+            keywords = action_keywords.get(action_lower.replace(" ", "_"))
+            if keywords is None:
+                words = [w for w in re.findall(r"[a-z]+", action_lower) if w not in stopwords and len(w) > 3]
+                keywords = words or [action_lower]
             if any(kw in generated_lower for kw in keywords):
                 covered += 1
 

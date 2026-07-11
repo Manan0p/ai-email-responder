@@ -1,0 +1,866 @@
+{
+  "overall_composite": 0.7423,
+  "num_evaluated": 20,
+  "avg_automated_scores": {
+    "rouge_l": 0.3405,
+    "bert_score": 0.3822,
+    "sentence_similarity": 0.8206,
+    "key_action_coverage": 0.9583
+  },
+  "avg_judge_scores": {
+    "semantic_accuracy": 4.55,
+    "intent_alignment": 4.55,
+    "tone": 4.8,
+    "completeness": 4.35,
+    "coherence": 5.0
+  },
+  "by_category": {
+    "meeting_scheduling": 0.738,
+    "project_updates": 0.7245,
+    "customer_support": 0.763,
+    "hr_internal": 0.7373,
+    "sales_partnership": 0.7487
+  },
+  "per_response": [
+    {
+      "email_id": "email_009",
+      "category": "meeting_scheduling",
+      "scenario": "reschedule_request",
+      "generated_reply": "Dear David, \n\nthank you for reaching out and I apologize for any inconvenience this rescheduling may cause. I understand the importance of the meeting, especially considering the integration of Eclipse with our platform, and I appreciate your efforts to find an alternative time. After reviewing my schedule, I can confirm that I am available on March 23rd. Would you prefer to keep the same time slot of 2 PM or would you like to schedule it for a different time on that day? If March 23rd does not work for you, please let me know and I will do my best to accommodate the alternative date of March 21st. I am looking forward to our meeting and exploring how we can collaborate to drive Project Nova forward. Please confirm the new meeting time at your earliest convenience.\n\nBest regards, Michael",
+      "scores": {
+        "rouge_l": 0.4368,
+        "bert_score": 0.4268,
+        "sentence_similarity": 0.8228,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7025,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply captures the core message of rescheduling the meeting and discussing the Eclipse integration, but misses mentioning the need to confirm with the technical lead."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply addresses the goal of rescheduling the meeting and exploring collaboration, but does not fully align with the intent of confirming the meeting details with all necessary parties."
+          },
+          "tone": {
+            "score": 4,
+            "reason": "The tone is professional and polite, but slightly less engaging and personalized compared to the human-written reference."
+          },
+          "completeness": {
+            "score": 3,
+            "reason": "The AI reply addresses the rescheduling and the integration discussion, but misses key points such as confirming with the technical lead and sending a formal meeting invite."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to understand and follow."
+          },
+          "average_score": 4.0,
+          "normalized_average": 0.75
+        }
+      },
+      "retrieved_examples": [
+        "email_001",
+        "email_008",
+        "email_006"
+      ]
+    },
+    {
+      "email_id": "email_011",
+      "category": "meeting_scheduling",
+      "scenario": "cancel_meeting",
+      "generated_reply": "Dear Olivia, \n\nthank you for reaching out and informing me about the cancellation of our meeting scheduled for Thursday, March 18th. I understand that changes in the market can impact project timelines, and I appreciate your transparency regarding the postponement of the Project Apex implementation for Brightwave Solutions. \n\nPlease confirm if there are any immediate next steps or actions required from our end due to this change. We will update our records to reflect the postponement of the implementation phase until Q2. If there's anything we can do to support you during this time or prepare for the rescheduled implementation, please do not hesitate to let us know.\n\nAdditionally, I would like to express our continued interest in working with Pinnacle Consulting on Project Apex and explore how we can adapt our services to meet your evolving needs. Should you wish to discuss further or require any assistance, we are more than happy to schedule a call at your convenience.\n\nBest regards,\nCarlos",
+      "scores": {
+        "rouge_l": 0.3197,
+        "bert_score": 0.3395,
+        "sentence_similarity": 0.7154,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7572,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, understanding the cancellation and postponement reasons."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including expressing support and willingness to reschedule."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, polite, and appropriate for the context, showing appreciation for the update and offering assistance."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the cancellation, postponement, and offer of support."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The reply is well-structured, grammatically correct, and professional, making it easy to understand and respond to."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_013",
+        "email_014",
+        "email_012"
+      ]
+    },
+    {
+      "email_id": "email_014",
+      "category": "meeting_scheduling",
+      "scenario": "cancel_meeting",
+      "generated_reply": "Dear Fatima,\n\nThank you for notifying me about the cancellation of our meeting scheduled for March 17th. I understand that project timelines can be unpredictable, and I appreciate your transparency regarding the changes in Project Eclipse. I had allocated time for our discussion on integrating QuantisCore with Apex Dynamics' product line, so I will adjust my schedule accordingly.\n\nI'm interested in learning more about the significant adjustments made to Project Eclipse and how they impact our potential collaboration. Could you please provide an update on the revised project scope and whether there are any new developments that may require our attention in the future? If there's anything I can do to support your team during this transition, please don't hesitate to reach out.\n\nI appreciate your time and look forward to hearing from you soon. If you need any assistance or would like to schedule an alternative meeting to discuss any new developments, please let me know.\n\nBest regards,\nAhmed",
+      "scores": {
+        "rouge_l": 0.2509,
+        "bert_score": 0.3543,
+        "sentence_similarity": 0.9029,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7814,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the meeting cancellation and expressing interest in the project adjustments."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including adjusting schedules, offering support, and seeking an update on the project scope."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, polite, and appropriate for the email context, mirroring the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the meeting cancellation, project adjustments, and potential for future collaboration."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The reply is well-structured, grammatically correct, and professional, with a clear and logical flow of ideas and sentences."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_011",
+        "email_012",
+        "email_013"
+      ]
+    },
+    {
+      "email_id": "email_015",
+      "category": "meeting_scheduling",
+      "scenario": "cancel_meeting",
+      "generated_reply": "Dear Lisa,\n\nThank you for reaching out and notifying me about the cancellation of our meeting scheduled for this Friday, March 17th. I appreciate your team's diligence in reviewing the project requirements and determining that the meeting is no longer necessary. I had allocated time for our discussion, so I will make sure to adjust my schedule accordingly.\n\nI'm glad to hear that the implementation of Apex for Project Eclipse can proceed without the need for our meeting. If there's any additional information or support I can provide to ensure a smooth implementation, please don't hesitate to reach out. I would also appreciate any updates on the project timeline and the expected outcomes of the Apex integration.\n\nPlease confirm if there will be any further communication or follow-up meetings required from our end. I'm looking forward to hearing from you soon and exploring how we can continue to support the success of Project Eclipse.\n\nBest regards,\nKenji Thompson",
+      "scores": {
+        "rouge_l": 0.3841,
+        "bert_score": 0.4377,
+        "sentence_similarity": 0.9002,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.711,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply conveys the same core message as the reference, acknowledging the meeting cancellation and expressing willingness to support the project, but slightly differs in wording and emphasis."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply addresses the main goals of the reference, such as adjusting schedules and offering support, but misses the specific request for confirming the expected completion date of the Apex integration."
+          },
+          "tone": {
+            "score": 4,
+            "reason": "The tone of the AI reply is professional and polite, similar to the reference, but may come across slightly more formal or less engaging."
+          },
+          "completeness": {
+            "score": 3,
+            "reason": "The AI reply addresses some key points from the incoming email, like the cancellation and the offer for support, but does not fully capture all aspects, such as the specific interest in the project's timeline and outcomes."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and maintains a professional tone throughout, making it easy to follow and understand."
+          },
+          "average_score": 4.0,
+          "normalized_average": 0.75
+        }
+      },
+      "retrieved_examples": [
+        "email_011",
+        "email_013",
+        "email_012"
+      ]
+    },
+    {
+      "email_id": "email_026",
+      "category": "project_updates",
+      "scenario": "deadline_extension",
+      "generated_reply": "Dear Chen,\n\nThank you for reaching out and explaining the situation with Project Orion. I understand that unforeseen issues can arise, and I appreciate your team's commitment to delivering a high-quality final product. After reviewing our project timeline, I am willing to consider a deadline extension. Given that the overall project budget of $250,000 remains unaffected, I propose we proceed with the extension to March 29th as requested. However, I would like to schedule a call with our technical teams to discuss the integration challenges and ensure that we are on track to meet the revised deadline.\n\nPlease let me know a few dates and times that work for you this week, and I will make sure to coordinate accordingly. During the call, I suggest we also review the project's current status and the steps needed to complete the integration of the AI module successfully. This will help us identify any potential risks and develop a plan to mitigate them.\n\nI appreciate your proactive approach to addressing the unforeseen issues, and I look forward to discussing the details further. Please confirm your availability, and I will send over a meeting invite.\n\nBest regards,\nMichael",
+      "scores": {
+        "rouge_l": 0.3728,
+        "bert_score": 0.4337,
+        "sentence_similarity": 0.7762,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7304,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply conveys a similar message to the reference, discussing the deadline extension and the need for a call to finalize details, but differs slightly in the proposed deadline and the emphasis on reviewing the project schedule."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply aligns with the reference's intent to discuss a deadline extension and ensure the project's quality, but proposes a different approach to addressing the integration challenges."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional, polite, and collaborative, matching the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 4,
+            "reason": "The AI reply addresses most points from the incoming email, including the deadline extension, budget, and the need for a call, but does not explicitly mention discussing potential risks associated with the extended timeline as the reference does."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to follow and understand."
+          },
+          "average_score": 4.4,
+          "normalized_average": 0.85
+        }
+      },
+      "retrieved_examples": [
+        "email_030",
+        "email_028",
+        "email_029"
+      ]
+    },
+    {
+      "email_id": "email_028",
+      "category": "project_updates",
+      "scenario": "deadline_extension",
+      "generated_reply": "Dear Rachel, \n\nthank you for reaching out and explaining the situation with Project Nova. I understand that unforeseen issues can arise, and I appreciate your team's proactive approach to addressing them. After reviewing our project timeline, I am willing to consider a deadline extension. Given that the project's budget of $250,000 remains unchanged, I propose a one-week extension to March 22nd, which should provide your team with sufficient time to complete the data integration process without compromising the quality of the deliverables. \n\nI would like to schedule a call with you to discuss the project's progress, the challenges your team is facing, and the revised timeline. Please let me know your availability this week, and I will coordinate a meeting at your earliest convenience. During the call, I would appreciate it if you could provide a detailed update on the status of the AI-powered analytics tool and any additional support your team may need to ensure its successful integration.\n\nLooking forward to hearing back from you and discussing the details further.\n\nBest regards,\nMaria",
+      "scores": {
+        "rouge_l": 0.4037,
+        "bert_score": 0.4215,
+        "sentence_similarity": 0.6699,
+        "key_action_coverage": 0.6667,
+        "composite_score": 0.6652,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply captures the core message of considering a deadline extension and discussing project progress, but differs slightly in the proposed extension duration."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply aligns with the intent of addressing the deadline extension and discussing project details, but proposes a different extension period than the reference."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, polite, and appropriate for the context, similar to the reference reply."
+          },
+          "completeness": {
+            "score": 4,
+            "reason": "The AI reply addresses most points, including the deadline extension, project progress, and need for discussion, but does not explicitly mention notifying stakeholders."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The reply is well-structured, grammatically correct, and professional, making it easy to follow and understand."
+          },
+          "average_score": 4.4,
+          "normalized_average": 0.85
+        }
+      },
+      "retrieved_examples": [
+        "email_030",
+        "email_026",
+        "email_029"
+      ]
+    },
+    {
+      "email_id": "email_034",
+      "category": "project_updates",
+      "scenario": "blocker_report",
+      "generated_reply": "Hi Fatima, thank you for reaching out and bringing this critical issue to my attention. I understand the urgency and potential impact on the project timeline and budget. I have informed our technical team about the compatibility issues with the legacy system and the new AI module from Orbit Labs, and they are willing to work with your team to find a solution. In the meantime, I suggest we schedule an emergency meeting for today at 3 PM to discuss the details of the technical roadblock and possible workarounds. I will also invite our legacy system development team to join the call, so we can get their input and expertise. Please confirm your availability, and I will send over a meeting invite. Additionally, I will provide an update on the potential solutions we can explore, including a temporary workaround that might allow your team to proceed with the integration while we work on a more permanent fix. I am confident that together, we can find a way to resolve this issue and get the project back on track. If there's any additional information or documentation you think would be helpful for the meeting, please let me know and I will make sure to review it beforehand. I look forward to speaking with you soon. Best regards, David.",
+      "scores": {
+        "rouge_l": 0.4195,
+        "bert_score": 0.5382,
+        "sentence_similarity": 0.6043,
+        "key_action_coverage": 0.5,
+        "composite_score": 0.7152,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, addressing the critical issue and the need for urgent attention."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including scheduling a meeting and providing additional technical support to resolve the compatibility issues."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional, urgent, and collaborative, which is appropriate for the context of addressing a critical issue in a project."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the technical roadblock, the potential impact on the project timeline and budget, and the need for an emergency meeting."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to understand and follow the proposed actions and solutions."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_033",
+        "email_011",
+        "email_031"
+      ]
+    },
+    {
+      "email_id": "email_035",
+      "category": "project_updates",
+      "scenario": "blocker_report",
+      "generated_reply": "Hi Maria, \n\nthank you for reaching out and bringing this critical issue to my attention. I understand the urgency of the situation and the potential impact on the project timeline and budget. I apologize for the delay in the Azure API integration and appreciate your efforts to escalate the issue.\n\nI have immediately informed our API development team about the situation, and they are willing to work closely with your team to find a solution. To mitigate the delay, I suggest we explore possible alternatives, such as a temporary workaround or a phased integration approach, that could allow your team to proceed with the project while the API team completes their tasks.\n\nI propose we schedule a call for tomorrow at 10 AM to discuss the details of the technical dependency and potential solutions. I will invite our API development team to join the call, so we can get their input and expertise. Additionally, I will provide an update on the potential mitigation strategies we can explore to minimize the delay and associated costs.\n\nPlease confirm your availability, and I will send over a meeting invite. I am committed to finding a solution that works for everyone involved and ensures we get Project Eclipse back on track as soon as possible.\n\nBest regards,\nRachel",
+      "scores": {
+        "rouge_l": 0.379,
+        "bert_score": 0.4025,
+        "sentence_similarity": 0.7923,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7873,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, addressing the critical issue, urgency, and potential impact on the project timeline and budget."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including scheduling a meeting, exploring workarounds, and involving the API team and project sponsor."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, apologetic, and collaborative, which is appropriate for the email context and similar to the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the technical dependency, deadline, and potential costs."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to follow and understand."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_031",
+        "email_033",
+        "email_030"
+      ]
+    },
+    {
+      "email_id": "email_042",
+      "category": "customer_support",
+      "scenario": "complaint",
+      "generated_reply": "Dear David, \n\nI am sorry to hear that the recent deployment of the Nova software for your Eclipse project has caused disruptions to your operations and resulted in revenue loss. I understand the significance of this issue and the expectations that were set during our previous meetings. I have immediately informed our technical team about the problems you are experiencing, and they are ready to work with your team to identify the root causes and implement corrective measures.\n\nTo address the technical issues, including server crashes and compatibility problems, I suggest we schedule a call for tomorrow at 10 AM to discuss the details and potential solutions. I will also invite our Nova software development team to join the call, so we can get their expertise and input on resolving these issues promptly. In the meantime, I will provide an update on the possible causes of the disruptions and the steps we can take to prevent such incidents in the future.\n\nAdditionally, I would like to offer our support in mitigating the revenue loss you have incurred. I propose that we discuss a possible compensation or a dedicated support package that can help your team get back on track. Please let me know if this is something you would be open to, and we can explore the options further during our call.\n\nPlease confirm your availability for the call, and I will send over a meeting invite. If there is any additional information you can provide beforehand, such as specific error logs or details about the compatibility issues, it would be helpful for our team to review before the call. I am committed to making things right and ensuring that the Nova software deployment meets your expectations.\n\nBest regards,\nFatima",
+      "scores": {
+        "rouge_l": 0.2818,
+        "bert_score": 0.3411,
+        "sentence_similarity": 0.8137,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7684,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, addressing the issues with the Nova software deployment and the need for a call to discuss solutions."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including escalating the issue, scheduling a call, and providing a temporary workaround."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional, apologetic, and solution-oriented, which is appropriate for the context of addressing a customer's concerns."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the technical issues, revenue loss, and the need for a call to discuss solutions."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to follow and understand."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_033",
+        "email_030",
+        "email_043"
+      ]
+    },
+    {
+      "email_id": "email_043",
+      "category": "customer_support",
+      "scenario": "complaint",
+      "generated_reply": "Dear James,\n\nI apologize for the inconvenience and financial losses caused by the technical issues with the ApexPro software installation on Project Eclipse. I understand the significance of this project and the impact of the downtime on your operations. I am truly sorry to hear that our team's response has been lacking, and I will personally ensure that we address this matter with the utmost urgency.\n\nI would like to schedule a call at your earliest convenience to discuss the issues in detail and work towards a resolution. I will invite our technical support team to join the call, so we can provide a comprehensive plan to rectify the problems and prevent such incidents in the future. Additionally, I am open to discussing potential compensation for the losses incurred, as we value our partnership with Pinnacle Consulting and are committed to making things right.\n\nPlease let me know a few dates and times that work for you, and I will make sure to adjust my schedule accordingly. In the meantime, I will instruct our team to reach out to Rachel and provide any necessary support to get the project back on track.\n\nThank you for bringing this to my attention, and I look forward to speaking with you soon.\n\nBest regards,\nCarlos",
+      "scores": {
+        "rouge_l": 0.3529,
+        "bert_score": 0.399,
+        "sentence_similarity": 0.8492,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7925,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, including apologies, urgency to resolve issues, and willingness to discuss compensation."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, such as scheduling a call, resolving technical issues, and discussing potential compensation."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, apologetic, and conciliatory, which is appropriate for responding to a disappointed client."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the technical issues, financial losses, lack of response from the team, and the need for a resolution and potential compensation."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to understand and follow."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_044",
+        "email_013",
+        "email_033"
+      ]
+    },
+    {
+      "email_id": "email_050",
+      "category": "customer_support",
+      "scenario": "refund_request",
+      "generated_reply": "Dear Robert, \n\nThank you for reaching out to us regarding your concerns with the Project Nova software package. I apologize that the software has not met your expectations due to the technical issues you've encountered. I understand that despite your efforts to troubleshoot, the problems persisted, leading to your decision to seek a refund.\n\nI have forwarded your refund request to our finance department for immediate attention. To ensure a smooth refund process, could you please confirm your purchase order number and the original payment method used for the $5,200 transaction? This information will help us expedite the refund.\n\nOur standard refund policy typically requires 7-10 business days to process once all necessary information is received. However, I will personally ensure that your request is given priority. You will receive a refund confirmation email with a reference number once the refund has been processed.\n\nIn addition to processing your refund, I would like to offer our technical support team's assistance in identifying the root cause of the technical issues you faced. This might help us improve our software and prevent similar problems for future clients. If you're open to it, please let me know a convenient time for a call to discuss further.\n\nIf you have any questions or concerns about the refund process or would like to explore alternative solutions that might better fit your needs, please don't hesitate to contact me directly. I appreciate your patience and understanding in this matter and look forward to resolving it to your satisfaction.\n\nBest regards,\nOlivia",
+      "scores": {
+        "rouge_l": 0.2913,
+        "bert_score": 0.3598,
+        "sentence_similarity": 0.7576,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7047,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply conveys the same core message as the reference, including the refund and addressing technical issues, but differs slightly in specifics such as the refund process details."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply addresses the same goals as the reference, including providing a refund and offering additional support, but introduces a new intent of discussing the root cause of technical issues."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, apologetic, and helpful, matching the context of responding to a customer's refund request and technical issues."
+          },
+          "completeness": {
+            "score": 4,
+            "reason": "The AI reply addresses most points raised in the incoming email, including the refund request and technical issues, but does not explicitly mention uninstalling the software or a complimentary consultation as in the reference."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The reply is well-structured, grammatically correct, and professional, making it easy to follow and understand the response to the customer's concerns."
+          },
+          "average_score": 4.4,
+          "normalized_average": 0.85
+        }
+      },
+      "retrieved_examples": [
+        "email_046",
+        "email_049",
+        "email_047"
+      ]
+    },
+    {
+      "email_id": "email_051",
+      "category": "customer_support",
+      "scenario": "product_inquiry",
+      "generated_reply": "Dear Robert,\n\nThank you for considering DataForge's X5000 servers for your Eclipse project at Apex Dynamics. I'm happy to provide you with the information you've requested. The DataForge X5000 servers are indeed compatible with your existing Oracle database system, ensuring a seamless integration with your current infrastructure. We have successfully deployed these servers in similar environments, and I can share a case study with you if you're interested.\n\nRegarding availability and lead time, I've checked with our logistics team, and we can deliver the X5000 servers within 4-6 weeks from the date of order confirmation. Given your project timeline, I recommend placing the order by February 20th to ensure timely delivery before your project commences on March 15, 2024.\n\nThe price for the DataForge X5000 servers is competitive, and for a bulk order, we can discuss a customized quote that fits within your budget of $200,000. I'd like to offer a 7% discount for a bulk order, which would bring the total cost down to $186,000. Please note that this quote includes standard support and maintenance for the first year.\n\nIf you're interested in proceeding, I'd be happy to schedule a call to discuss the project further, answer any questions you may have, and outline the next steps. Additionally, I've attached a detailed spec sheet for the DataForge X5000 servers for your review.\n\nPlease don't hesitate to contact me if you require any further information or clarification. I look forward to the opportunity to work with Apex Dynamics on your Eclipse project.\n\nBest regards,\nYuki",
+      "scores": {
+        "rouge_l": 0.3577,
+        "bert_score": 0.3397,
+        "sentence_similarity": 0.8842,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7863,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, including compatibility, availability, and pricing details."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, such as providing information, discussing pricing, and scheduling a call."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional, polite, and appropriate for a business email, matching the tone of the reference."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses every point raised in the incoming email, including compatibility, availability, lead time, budget, and the project timeline."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, with a clear and logical flow of information."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_052",
+        "email_055",
+        "email_053"
+      ]
+    },
+    {
+      "email_id": "email_067",
+      "category": "hr_internal",
+      "scenario": "onboarding_question",
+      "generated_reply": "Hi Jennifer, \n\nWelcome to NexGen Software. I'm happy to help you navigate the onboarding process and answer any questions you may have. I've scheduled a call for this Thursday at 10 AM to discuss the 'Eclipse' project and introduce you to the team you'll be working with. In the meantime, I've shared a folder with you on Google Drive that contains all the necessary documents and resources, including the project plan, a list of key contacts, and a detailed overview of the project's objectives and timelines. \n\nThe 'Eclipse' project is a high-priority initiative with a budget of $1.5 million, and we're expecting to complete it by the end of Q3. Your role as a software engineer will be crucial in driving the project forward, and I'm confident that your skills and experience will be a great asset to the team. \n\nAdditionally, I've assigned you a buddy, Michael Chen, who will be your point of contact for any questions or concerns you may have during your onboarding process. He'll be reaching out to you soon to schedule a meeting and provide any necessary guidance. \n\nIf you have any urgent matters before our call, please don't hesitate to reach out to me directly. We're looking forward to having you on board and working with you on the 'Eclipse' project.\n\nBest regards,\nRobert",
+      "scores": {
+        "rouge_l": 0.2611,
+        "bert_score": 0.314,
+        "sentence_similarity": 0.8692,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.6693,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply conveys most of the core message, including the project details and onboarding process, but introduces some new information not present in the reference, such as the project budget and a scheduled call."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply addresses the main goals of providing information about the 'Eclipse' project and facilitating the onboarding process, but differs in the approach, such as scheduling a call and assigning a buddy, which are not mentioned in the reference."
+          },
+          "tone": {
+            "score": 4,
+            "reason": "The tone is generally professional and welcoming, but could be slightly more formal in places to perfectly match the context of a workplace onboarding process."
+          },
+          "completeness": {
+            "score": 3,
+            "reason": "The AI reply does not fully address all points raised in the incoming email, such as the request for information about the team and the start date, which are only partially covered."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The reply is well-structured, grammatically correct, and professional, making it easy to follow and understand the information being conveyed."
+          },
+          "average_score": 4.0,
+          "normalized_average": 0.75
+        }
+      },
+      "retrieved_examples": [
+        "email_069",
+        "email_066",
+        "email_070"
+      ]
+    },
+    {
+      "email_id": "email_068",
+      "category": "hr_internal",
+      "scenario": "onboarding_question",
+      "generated_reply": "Dear Jennifer,\n\nWelcome to Pinnacle Consulting. I'm happy to assist you with the onboarding process. Your laptop and credentials for our internal systems will be ready for you on your first day, and our IT department will be in touch with you to schedule a time for setup and orientation. Regarding Asana, you will receive an invitation to join our organization's workspace, and you'll have access to all the necessary projects and tasks. \n\nIn preparation for your meeting with the team on Friday, March 19th, I recommend reviewing our current projects and familiarizing yourself with the Asana dashboard. If you have any specific questions or concerns before the meeting, please don't hesitate to reach out to me or your supervisor. We're looking forward to having you on board and working with you on our upcoming initiatives.\n\nPlease let me know if there's anything else I can do to support you during this onboarding process. If you need any additional assistance or resources, don't hesitate to ask.\n\nBest regards,\nDavid",
+      "scores": {
+        "rouge_l": 0.4038,
+        "bert_score": 0.4926,
+        "sentence_similarity": 0.9144,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7261,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply conveys the same core message as the reference, but lacks specific details like the exact time for laptop pickup and the meeting with the IT specialist."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply addresses the main goals of assisting with onboarding and providing access to necessary tools, but misses the specific action of scheduling a meeting with the IT specialist."
+          },
+          "tone": {
+            "score": 4,
+            "reason": "The tone is professional and welcoming, but slightly less personalized than the reference reply."
+          },
+          "completeness": {
+            "score": 3,
+            "reason": "The AI reply addresses some points raised in the incoming email, such as the laptop and Asana access, but misses details like the IT setup and the meeting with the team on Friday."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to understand and follow."
+          },
+          "average_score": 4.0,
+          "normalized_average": 0.75
+        }
+      },
+      "retrieved_examples": [
+        "email_070",
+        "email_066",
+        "email_067"
+      ]
+    },
+    {
+      "email_id": "email_076",
+      "category": "hr_internal",
+      "scenario": "feedback",
+      "generated_reply": "Dear David,\n\nThank you for your email and for sharing your feedback on Project Aurora. I'm thrilled to hear that our team's efforts were instrumental in the project's success and that our suggestions on implementing AI-enhanced data analysis tools were able to save you approximately $120,000 in operational costs. I believe that the integration of AI technology can indeed bring significant benefits to various projects, and I'm more than happy to discuss how we can apply similar strategies to upcoming projects like Project Nova.\n\nI'm particularly interested in exploring how we can leverage our experience from Project Aurora to drive process improvements in other initiatives. I think it would be beneficial to schedule a meeting to go over the specifics of how we can adapt our approach to fit the needs of Project Nova and other future projects. Would you be available to meet on either Tuesday or Wednesday of next week? If neither of these days works for you, please let me know and I'll work with you to find a suitable alternative.\n\nAdditionally, I'd like to invite our project lead, Michael, to the meeting, as his insights on the technical aspects of Project Aurora and its potential applications to Project Nova would be invaluable. Please let me know if this is acceptable to you, and I'll ensure that Michael is included in the meeting invitation.\n\nOnce again, thank you for your kind words and for the opportunity to collaborate on Project Aurora. I'm looking forward to our discussion next week and to exploring ways in which we can continue to drive innovation and efficiency in our future projects.\n\nBest regards,\nEmily Anderson",
+      "scores": {
+        "rouge_l": 0.2984,
+        "bert_score": 0.3779,
+        "sentence_similarity": 0.8314,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7801,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, acknowledging the success of Project Aurora and the potential for applying similar strategies to Project Nova."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including discussing the application of AI-enhanced data analysis tools to future projects and scheduling a meeting."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional, polite, and appreciative, matching the tone of the reference and the context of the email."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the success of Project Aurora, the potential for future collaborations, and the suggestion to invite the project lead to the meeting."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, with a clear and logical flow of ideas and no noticeable errors."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_038",
+        "email_019",
+        "email_078"
+      ]
+    },
+    {
+      "email_id": "email_079",
+      "category": "hr_internal",
+      "scenario": "feedback",
+      "generated_reply": "Dear Ahmed, \n\nthank you for your email and for taking the time to reflect on our recent collaboration on the Eclipse project. I appreciate your kind words regarding the project's success and the value it brought to both our companies. I completely agree that there are key takeaways from this project that could enhance our workflow and communication for future collaborations. Establishing clearer milestones and deadlines upfront is an excellent suggestion, as it would indeed help in managing expectations and minimizing last-minute changes. \n\nI have been thinking along similar lines, and I believe implementing a more detailed project planning phase, including regular progress updates and a centralized communication channel, could also significantly improve our collaboration efficiency. I would be more than happy to discuss these ideas further with you and explore ways to implement them. \n\nRegarding your suggestion for a call next week, I am available on Wednesday or Friday. Would either of these days work for you? If so, please let me know a time that suits you best, and I will make sure to adjust my schedule accordingly. \n\nAdditionally, I would like to invite our project management team to join the call, as their input would be invaluable in discussing potential improvements to our collaboration process. Please let me know if this is acceptable to you, and I will extend the invitation accordingly. \n\nThank you again for your proactive approach to enhancing our collaboration. I look forward to speaking with you soon. \n\nBest regards, \nMaria Rodriguez",
+      "scores": {
+        "rouge_l": 0.3632,
+        "bert_score": 0.3411,
+        "sentence_similarity": 0.7948,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7737,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, focusing on improving workflow and communication for future collaborations."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including discussing improvements and scheduling a call with project leads."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, polite, and collaborative, matching the context of the email."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the suggestion for clearer milestones and deadlines, and the proposal for a call."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The reply is well-structured, grammatically correct, and professional, with a clear and logical flow of ideas."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_078",
+        "email_080",
+        "email_077"
+      ]
+    },
+    {
+      "email_id": "email_081",
+      "category": "sales_partnership",
+      "scenario": "cold_outreach_response",
+      "generated_reply": "Hi James, \n\nThank you for your email and for your interest in exploring potential partnership opportunities between Brightwave Solutions and HorizonX. We're always open to discussing how our solutions can work together to provide more comprehensive services to our clients. The launch of our Eclipse product line has indeed been a significant milestone for us, and we're looking for ways to further enhance its capabilities.\n\nBefore we schedule a call, I'd like to know more about WaveForge and how it could integrate with our existing infrastructure, particularly with the Eclipse project. Could you please share some detailed information or a case study that highlights the benefits of your AI-powered analytics tool? This would give us a better understanding of how WaveForge can complement our solutions.\n\nRegarding scheduling a call, the next two weeks work for us. Would you be available for a call on the 8th or 10th of next month? If those dates don't suit you, please let me know a few alternative dates and times that work for you, and I'll make sure to adjust our schedule accordingly.\n\nI look forward to hearing back from you and exploring this opportunity further.\n\nBest regards,\nDavid",
+      "scores": {
+        "rouge_l": 0.386,
+        "bert_score": 0.3424,
+        "sentence_similarity": 0.8954,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7314,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply captures the core message of exploring partnership opportunities and requesting more information about WaveForge, but slightly deviates in details such as not mentioning running it by the partnerships team."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply aligns with the intent of discussing potential partnership and seeking more information, but proposes specific call dates without considering the bi-weekly team meeting schedule."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, polite, and appropriate for a business email, mirroring the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 4,
+            "reason": "The AI reply addresses most points from the incoming email, including the interest in WaveForge and the need for more information, but misses mentioning the partnerships team's review process."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The reply is well-structured, grammatically correct, and maintains a professional tone throughout, indicating high-quality writing."
+          },
+          "average_score": 4.4,
+          "normalized_average": 0.85
+        }
+      },
+      "retrieved_examples": [
+        "email_053",
+        "email_085",
+        "email_088"
+      ]
+    },
+    {
+      "email_id": "email_083",
+      "category": "sales_partnership",
+      "scenario": "cold_outreach_response",
+      "generated_reply": "Dear Fatima, \n\nThank you for reaching out and for your kind words about Evergreen Systems. We're always interested in exploring new opportunities that can enhance our offerings and drive efficiency. The GreenTech initiative is indeed one of our priority projects, and we're open to discussing how AI-powered data synchronization solutions like SyncPro could support our goals.\n\nHowever, we have a few ongoing evaluations that we need to prioritize at the moment, including assessing the compatibility of new technologies with our existing infrastructure. I'd be open to a call to discuss how GlobalSync Corp's solutions could potentially integrate with our current systems and contribute to our projects' success. \n\nWould you be available for a 30-minute call on the 17th of this month, as you suggested, or possibly the 22nd? Please let me know if either of these dates work for you, and if not, we can schedule an alternative time that suits you better.\n\nAdditionally, I'd appreciate any detailed information you can share about SyncPro, including case studies or testimonials from previous partnerships, that demonstrate how your technology has helped other companies achieve significant operational cost savings, such as the $100,000 you mentioned. This will help us better understand the potential benefits and alignment with our objectives.\n\nLooking forward to hearing from you and discussing this further.\n\nBest regards,\nChen",
+      "scores": {
+        "rouge_l": 0.3095,
+        "bert_score": 0.3925,
+        "sentence_similarity": 0.8723,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7903,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply conveys the same core message and meaning as the reference, expressing interest in learning more about SyncPro and its potential benefits for the GreenTech initiative."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, including requesting more information about SyncPro, discussing compatibility, and scheduling a call."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional, polite, and appropriate for a business email, mirroring the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply addresses all points raised in the incoming email, including the request for a meeting, the interest in cost savings, and the need for more detailed information about SyncPro."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to follow and understand the content and intentions."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_081",
+        "email_038",
+        "email_091"
+      ]
+    },
+    {
+      "email_id": "email_085",
+      "category": "sales_partnership",
+      "scenario": "cold_outreach_response",
+      "generated_reply": "Dear Fatima, \n\nThank you for reaching out and for your kind words about Evergreen Systems. We're always interested in exploring opportunities that can enhance our offerings and drive growth. I'm impressed by the success of your flagship product, Aurora, and the potential revenue increase it could bring to our business. \n\nI'd be open to a call to discuss how Stellar Platforms' solutions could support our goals, particularly in light of our current projects and initiatives. Before we schedule a call, I'd appreciate any additional information you can provide about Aurora and its integration with similar systems. Specifically, I'd like to understand the challenges you've faced in these integrations and how you've overcome them, as well as any case studies or testimonials from your previous partnerships.\n\nRegarding the call, February 22nd or 23rd could work, but I'd need to confirm my schedule. Would it be possible to send over a couple of time slots on both days? This will allow me to ensure that I can dedicate the necessary time to our discussion.\n\nI'm looking forward to learning more about Stellar Platforms and exploring the potential for a partnership. Please feel free to share any relevant materials or insights that could help us better understand the benefits of working together.\n\nBest regards,\nMichael",
+      "scores": {
+        "rouge_l": 0.2776,
+        "bert_score": 0.3109,
+        "sentence_similarity": 0.8621,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7092,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 4,
+            "reason": "The AI reply conveys the core message of interest in a potential partnership and requests more information, similar to the reference reply, but lacks specific details about the EcoCycle project."
+          },
+          "intent_alignment": {
+            "score": 4,
+            "reason": "The AI reply addresses the goal of exploring a partnership and requests a call, aligning with the reference, but does not specify a time like the reference does."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone is professional, polite, and inviting, matching the tone of the reference reply and appropriate for a business email."
+          },
+          "completeness": {
+            "score": 4,
+            "reason": "The AI reply addresses most points from the incoming email, including the interest in Aurora and the request for a call, but misses mentioning the specific project EcoCycle and its launch date."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professional, making it easy to follow and understand."
+          },
+          "average_score": 4.4,
+          "normalized_average": 0.85
+        }
+      },
+      "retrieved_examples": [
+        "email_038",
+        "email_091",
+        "email_081"
+      ]
+    },
+    {
+      "email_id": "email_099",
+      "category": "sales_partnership",
+      "scenario": "contract_question",
+      "generated_reply": "Hello Olivia, \n\nThank you for reaching out to clarify the contract terms for the Azure Integration project. I'm more than happy to assist you with the renewal process and answer any questions you may have. The current contract does indeed expire on December 31, 2024, and we will need to finalize the renewal by November 30, 2024, to avoid any disruptions to the project.\n\nRegarding amendments, we are open to discussing potential changes to the agreement, taking into account the project's evolving scope and requirements. Our initial contract value of $250,000 was based on the original project plan, but we understand that changes may have occurred since then. To initiate the renewal process, I will provide you with a contract renewal form that outlines the necessary steps and deadlines.\n\nIn terms of the renewal process, as outlined in Section 5 of the contract, either party can initiate the renewal with a 60-day written notice prior to the expiration date. If we decide to renew, the terms will remain the same unless otherwise agreed upon in writing. Any changes to the scope of work or payment terms will require a formal amendment to the contract, which may incur additional costs. I estimate these costs to be around $5,000 to $10,000, depending on the complexity of the changes.\n\nI would like to schedule a call to discuss the project's progress and any potential adjustments to the contract. Would you be available for a call next Thursday at 10 AM EST? Please let me know if this time does not suit you, and I will work with you to find a more convenient time.\n\nI have attached a copy of the contract and the renewal form for your reference. If you have any questions or concerns before our call, please do not hesitate to reach out to me directly. I appreciate your diligence in ensuring that all aspects of our partnership are properly managed and look forward to speaking with you soon.\n\nBest regards,\nChen",
+      "scores": {
+        "rouge_l": 0.26,
+        "bert_score": 0.2784,
+        "sentence_similarity": 0.8827,
+        "key_action_coverage": 1.0,
+        "composite_score": 0.7641,
+        "llm_judge": {
+          "semantic_accuracy": {
+            "score": 5,
+            "reason": "The AI reply accurately conveys the core message and meaning of the reference reply, including details about the contract renewal process and potential amendments."
+          },
+          "intent_alignment": {
+            "score": 5,
+            "reason": "The AI reply addresses the same goals and actions as the reference, such as providing necessary documentation, discussing potential changes, and scheduling a call."
+          },
+          "tone": {
+            "score": 5,
+            "reason": "The tone of the AI reply is professional, courteous, and appropriate for a business email, mirroring the tone of the reference reply."
+          },
+          "completeness": {
+            "score": 5,
+            "reason": "The AI reply thoroughly addresses all points raised in the incoming email, including the renewal process, contract value, and potential amendments."
+          },
+          "coherence": {
+            "score": 5,
+            "reason": "The AI reply is well-structured, grammatically correct, and professionally written, making it easy to follow and understand."
+          },
+          "average_score": 5.0,
+          "normalized_average": 1.0
+        }
+      },
+      "retrieved_examples": [
+        "email_097",
+        "email_098",
+        "email_100"
+      ]
+    }
+  ]
+}

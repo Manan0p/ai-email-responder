@@ -2,8 +2,7 @@ import re
 import time
 from dataclasses import dataclass
 from typing import List, Optional
-from google import genai
-from google.genai import errors as genai_errors
+from groq import Groq
 from src.config import config
 from src.retriever import Retriever, RetrievedContext
 
@@ -56,7 +55,7 @@ class Generator:
     def __init__(self, retriever: Retriever = None):
         config.validate()
         self.retriever = retriever or Retriever()
-        self.client = genai.Client(api_key=config.google_api_key)
+        self.client = Groq(api_key=config.groq_api_key)
 
     def generate(
         self,
@@ -73,18 +72,19 @@ class Generator:
         start = time.time()
         last_exc = None
         for attempt in range(MAX_RETRIES):
+            time.sleep(2.1)  # Buffer for Groq 30 RPM limit
             try:
-                response = self.client.models.generate_content(
+                response = self.client.chat.completions.create(
                     model=config.generation_model,
-                    contents=prompt,
-                    config=genai.types.GenerateContentConfig(
-                        system_instruction=SYSTEM_PROMPT,
-                        temperature=config.temperature,
-                    ),
+                    messages=[
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": prompt}
+                    ],
+                    temperature=config.temperature,
                 )
                 latency = time.time() - start
                 return GeneratedReply(
-                    reply_text=response.text.strip(),
+                    reply_text=response.choices[0].message.content.strip(),
                     retrieved_ids=[p.id for p in context.email_pairs],
                     model=config.generation_model,
                     latency_seconds=round(latency, 3),
@@ -92,7 +92,7 @@ class Generator:
                 )
             except Exception as exc:
                 last_exc = exc
-                if "429" in str(exc) or "RESOURCE_EXHAUSTED" in str(exc):
+                if "429" in str(exc) or "rate limit" in str(exc).lower():
                     delay = _retry_delay_from_error(exc) or BASE_DELAY * (2 ** attempt)
                     print(f"  [Rate limited] Retrying in {delay:.0f}s (attempt {attempt + 1}/{MAX_RETRIES})...")
                     time.sleep(delay)

@@ -1,6 +1,11 @@
 """CLI: Full end-to-end demo of the AI Email Responder system."""
 import json
 import sys
+import io
+
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 import os
 import argparse
 
@@ -114,8 +119,8 @@ def main():
 
     # Step 3: Evaluate on test set
     console.print("[bold cyan]Step 3: Evaluating on Test Set[/bold cyan]\n")
-    console.print("  Generating replies for 3 test emails (to stay under free-tier rate limits)...")
-    pipeline_results = pipeline.evaluate_test_set(limit=3)
+    console.print("  Generating replies for all test emails (this will take ~1 minute to respect API rate limits)...")
+    pipeline_results = pipeline.evaluate_test_set()
     console.print(f"  Generated {len(pipeline_results)} replies\n")
 
     console.print("  Running evaluation metrics...")

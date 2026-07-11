@@ -12,9 +12,9 @@ CHROMA_DIR = PROJECT_ROOT / ".chroma_db"
 
 @dataclass
 class Config:
-    google_api_key: str = field(default_factory=lambda: os.getenv("GOOGLE_API_KEY", ""))
-    generation_model: str = "gemini-2.0-flash"
-    judge_model: str = "gemini-2.0-flash"
+    groq_api_key: str = field(default_factory=lambda: os.getenv("GROQ_API_KEY", ""))
+    generation_model: str = "llama-3.3-70b-versatile"
+    judge_model: str = "llama-3.3-70b-versatile"
     embedding_model: str = "all-MiniLM-L6-v2"
     temperature: float = 0.7
     top_k_retrieval: int = 3
@@ -22,11 +22,8 @@ class Config:
     dataset_path: str = str(DATA_DIR / "email_dataset.json")
 
     def validate(self):
-        if not self.google_api_key:
-            raise ValueError(
-                "GOOGLE_API_KEY not set. Get one from https://aistudio.google.com/ "
-                "and add it to your .env file."
-            )
+        if not self.groq_api_key:
+            raise ValueError("GROQ_API_KEY is not set. Please set it in .env or environment variables.")
 
 
 config = Config()
